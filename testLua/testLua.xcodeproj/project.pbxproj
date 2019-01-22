@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0083587621F6FCCB00DC4D9F /* file.lua in Resources */ = {isa = PBXBuildFile; fileRef = 0083587521F6FCCB00DC4D9F /* file.lua */; };
+		0083597A21F702A700DC4D9F /* LSCPointer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0083594E21F702A200DC4D9F /* LSCPointer.m */; };
+		0083597B21F702A700DC4D9F /* LSCSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 0083595121F702A200DC4D9F /* LSCSession.m */; };
+		0083597C21F702A700DC4D9F /* LSCContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 0083595521F702A300DC4D9F /* LSCContext.m */; };
+		0083597D21F702A700DC4D9F /* LSCOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0083595721F702A300DC4D9F /* LSCOperationQueue.m */; };
+		0083597E21F702A700DC4D9F /* LSCValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0083595921F702A300DC4D9F /* LSCValue.m */; };
+		0083597F21F702A700DC4D9F /* LSCExportPropertyDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0083595A21F702A300DC4D9F /* LSCExportPropertyDescriptor.m */; };
+		0083598021F702A700DC4D9F /* LSCExportMethodDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0083595B21F702A300DC4D9F /* LSCExportMethodDescriptor.m */; };
+		0083598121F702A700DC4D9F /* LSCEngineAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0083595E21F702A300DC4D9F /* LSCEngineAdapter.m */; };
+		0083598221F702A700DC4D9F /* LSCVirtualInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 0083596521F702A400DC4D9F /* LSCVirtualInstance.m */; };
+		0083598321F702A700DC4D9F /* LSCExportTypeDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0083596A21F702A500DC4D9F /* LSCExportTypeDescriptor.m */; };
+		0083598421F702A700DC4D9F /* LSCTmpValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0083596B21F702A500DC4D9F /* LSCTmpValue.m */; };
+		0083598521F702A700DC4D9F /* LSCDataExchanger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0083596C21F702A500DC4D9F /* LSCDataExchanger.m */; };
+		0083598621F702A700DC4D9F /* LSCManagedValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0083597221F702A600DC4D9F /* LSCManagedValue.m */; };
+		0083598721F702A700DC4D9F /* LSCTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = 0083597421F702A600DC4D9F /* LSCTuple.m */; };
+		0083598821F702A700DC4D9F /* LSCFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 0083597521F702A600DC4D9F /* LSCFunction.m */; };
+		0083598921F702A700DC4D9F /* LSCExportsTypeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0083597821F702A700DC4D9F /* LSCExportsTypeManager.m */; };
+		0083598F21F70BB100DC4D9F /* TestObjClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0083598E21F70BB100DC4D9F /* TestObjClass.m */; };
 		00ED86AE2189858E0057BECE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ED86AD2189858E0057BECE /* AppDelegate.m */; };
 		00ED86B12189858E0057BECE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ED86B02189858E0057BECE /* ViewController.m */; };
 		00ED86B42189858E0057BECE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00ED86B22189858E0057BECE /* Main.storyboard */; };
@@ -67,6 +85,53 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0083587521F6FCCB00DC4D9F /* file.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = file.lua; path = testLua/file.lua; sourceTree = "<group>"; };
+		0083594E21F702A200DC4D9F /* LSCPointer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSCPointer.m; sourceTree = "<group>"; };
+		0083594F21F702A200DC4D9F /* LSCPointer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCPointer.h; sourceTree = "<group>"; };
+		0083595021F702A200DC4D9F /* LSCSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCSession.h; sourceTree = "<group>"; };
+		0083595121F702A200DC4D9F /* LSCSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSCSession.m; sourceTree = "<group>"; };
+		0083595221F702A300DC4D9F /* LSCTuple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCTuple.h; sourceTree = "<group>"; };
+		0083595321F702A300DC4D9F /* LSCExportTypeAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCExportTypeAnnotation.h; sourceTree = "<group>"; };
+		0083595421F702A300DC4D9F /* LSCContext_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCContext_Private.h; sourceTree = "<group>"; };
+		0083595521F702A300DC4D9F /* LSCContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSCContext.m; sourceTree = "<group>"; };
+		0083595621F702A300DC4D9F /* LSCExportMethodDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCExportMethodDescriptor.h; sourceTree = "<group>"; };
+		0083595721F702A300DC4D9F /* LSCOperationQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSCOperationQueue.m; sourceTree = "<group>"; };
+		0083595821F702A300DC4D9F /* LSCContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCContext.h; sourceTree = "<group>"; };
+		0083595921F702A300DC4D9F /* LSCValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSCValue.m; sourceTree = "<group>"; };
+		0083595A21F702A300DC4D9F /* LSCExportPropertyDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSCExportPropertyDescriptor.m; sourceTree = "<group>"; };
+		0083595B21F702A300DC4D9F /* LSCExportMethodDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSCExportMethodDescriptor.m; sourceTree = "<group>"; };
+		0083595C21F702A300DC4D9F /* LSCTuple_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCTuple_Private.h; sourceTree = "<group>"; };
+		0083595D21F702A300DC4D9F /* LSCExportType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCExportType.h; sourceTree = "<group>"; };
+		0083595E21F702A300DC4D9F /* LSCEngineAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSCEngineAdapter.m; sourceTree = "<group>"; };
+		0083595F21F702A400DC4D9F /* LSCSession_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCSession_Private.h; sourceTree = "<group>"; };
+		0083596021F702A400DC4D9F /* LSCValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCValue.h; sourceTree = "<group>"; };
+		0083596121F702A400DC4D9F /* LSCVirtualInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCVirtualInstance.h; sourceTree = "<group>"; };
+		0083596221F702A400DC4D9F /* LSCExportTypeDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCExportTypeDescriptor.h; sourceTree = "<group>"; };
+		0083596321F702A400DC4D9F /* LSCManagedValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCManagedValue.h; sourceTree = "<group>"; };
+		0083596421F702A400DC4D9F /* LSCValue_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCValue_Private.h; sourceTree = "<group>"; };
+		0083596521F702A400DC4D9F /* LSCVirtualInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSCVirtualInstance.m; sourceTree = "<group>"; };
+		0083596621F702A400DC4D9F /* LuaScriptCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuaScriptCore.h; sourceTree = "<group>"; };
+		0083596721F702A500DC4D9F /* LSCDataExchanger_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCDataExchanger_Private.h; sourceTree = "<group>"; };
+		0083596821F702A500DC4D9F /* LSCTypeDefinied.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCTypeDefinied.h; sourceTree = "<group>"; };
+		0083596921F702A500DC4D9F /* LSCExportsTypeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCExportsTypeManager.h; sourceTree = "<group>"; };
+		0083596A21F702A500DC4D9F /* LSCExportTypeDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSCExportTypeDescriptor.m; sourceTree = "<group>"; };
+		0083596B21F702A500DC4D9F /* LSCTmpValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSCTmpValue.m; sourceTree = "<group>"; };
+		0083596C21F702A500DC4D9F /* LSCDataExchanger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSCDataExchanger.m; sourceTree = "<group>"; };
+		0083596D21F702A500DC4D9F /* LSCTmpValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCTmpValue.h; sourceTree = "<group>"; };
+		0083596E21F702A500DC4D9F /* LSCFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCFunction.h; sourceTree = "<group>"; };
+		0083596F21F702A600DC4D9F /* LSCDataExchanger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCDataExchanger.h; sourceTree = "<group>"; };
+		0083597021F702A600DC4D9F /* LSCFunction_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCFunction_Private.h; sourceTree = "<group>"; };
+		0083597121F702A600DC4D9F /* LSCEngineAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCEngineAdapter.h; sourceTree = "<group>"; };
+		0083597221F702A600DC4D9F /* LSCManagedValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSCManagedValue.m; sourceTree = "<group>"; };
+		0083597321F702A600DC4D9F /* LSCOperationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCOperationQueue.h; sourceTree = "<group>"; };
+		0083597421F702A600DC4D9F /* LSCTuple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSCTuple.m; sourceTree = "<group>"; };
+		0083597521F702A600DC4D9F /* LSCFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSCFunction.m; sourceTree = "<group>"; };
+		0083597621F702A700DC4D9F /* LSCExportTypeDescriptor+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LSCExportTypeDescriptor+Private.h"; sourceTree = "<group>"; };
+		0083597721F702A700DC4D9F /* LSCExportPropertyDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCExportPropertyDescriptor.h; sourceTree = "<group>"; };
+		0083597821F702A700DC4D9F /* LSCExportsTypeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSCExportsTypeManager.m; sourceTree = "<group>"; };
+		0083597921F702A700DC4D9F /* LSCManagedObjectProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCManagedObjectProtocol.h; sourceTree = "<group>"; };
+		0083598D21F70BB100DC4D9F /* TestObjClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObjClass.h; sourceTree = "<group>"; };
+		0083598E21F70BB100DC4D9F /* TestObjClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObjClass.m; sourceTree = "<group>"; };
 		00ED86A92189858E0057BECE /* testLua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testLua.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00ED86AC2189858E0057BECE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		00ED86AD2189858E0057BECE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -169,9 +234,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0083594D21F7022C00DC4D9F /* code */ = {
+			isa = PBXGroup;
+			children = (
+				0083595421F702A300DC4D9F /* LSCContext_Private.h */,
+				0083595821F702A300DC4D9F /* LSCContext.h */,
+				0083595521F702A300DC4D9F /* LSCContext.m */,
+				0083596721F702A500DC4D9F /* LSCDataExchanger_Private.h */,
+				0083596F21F702A600DC4D9F /* LSCDataExchanger.h */,
+				0083596C21F702A500DC4D9F /* LSCDataExchanger.m */,
+				0083597121F702A600DC4D9F /* LSCEngineAdapter.h */,
+				0083595E21F702A300DC4D9F /* LSCEngineAdapter.m */,
+				0083595621F702A300DC4D9F /* LSCExportMethodDescriptor.h */,
+				0083595B21F702A300DC4D9F /* LSCExportMethodDescriptor.m */,
+				0083597721F702A700DC4D9F /* LSCExportPropertyDescriptor.h */,
+				0083595A21F702A300DC4D9F /* LSCExportPropertyDescriptor.m */,
+				0083596921F702A500DC4D9F /* LSCExportsTypeManager.h */,
+				0083597821F702A700DC4D9F /* LSCExportsTypeManager.m */,
+				0083595D21F702A300DC4D9F /* LSCExportType.h */,
+				0083595321F702A300DC4D9F /* LSCExportTypeAnnotation.h */,
+				0083596221F702A400DC4D9F /* LSCExportTypeDescriptor.h */,
+				0083596A21F702A500DC4D9F /* LSCExportTypeDescriptor.m */,
+				0083597621F702A700DC4D9F /* LSCExportTypeDescriptor+Private.h */,
+				0083597021F702A600DC4D9F /* LSCFunction_Private.h */,
+				0083596E21F702A500DC4D9F /* LSCFunction.h */,
+				0083597521F702A600DC4D9F /* LSCFunction.m */,
+				0083597921F702A700DC4D9F /* LSCManagedObjectProtocol.h */,
+				0083596321F702A400DC4D9F /* LSCManagedValue.h */,
+				0083597221F702A600DC4D9F /* LSCManagedValue.m */,
+				0083597321F702A600DC4D9F /* LSCOperationQueue.h */,
+				0083595721F702A300DC4D9F /* LSCOperationQueue.m */,
+				0083594F21F702A200DC4D9F /* LSCPointer.h */,
+				0083594E21F702A200DC4D9F /* LSCPointer.m */,
+				0083595F21F702A400DC4D9F /* LSCSession_Private.h */,
+				0083595021F702A200DC4D9F /* LSCSession.h */,
+				0083595121F702A200DC4D9F /* LSCSession.m */,
+				0083596D21F702A500DC4D9F /* LSCTmpValue.h */,
+				0083596B21F702A500DC4D9F /* LSCTmpValue.m */,
+				0083595C21F702A300DC4D9F /* LSCTuple_Private.h */,
+				0083595221F702A300DC4D9F /* LSCTuple.h */,
+				0083597421F702A600DC4D9F /* LSCTuple.m */,
+				0083596821F702A500DC4D9F /* LSCTypeDefinied.h */,
+				0083596421F702A400DC4D9F /* LSCValue_Private.h */,
+				0083596021F702A400DC4D9F /* LSCValue.h */,
+				0083595921F702A300DC4D9F /* LSCValue.m */,
+				0083596121F702A400DC4D9F /* LSCVirtualInstance.h */,
+				0083596521F702A400DC4D9F /* LSCVirtualInstance.m */,
+				0083596621F702A400DC4D9F /* LuaScriptCore.h */,
+			);
+			path = code;
+			sourceTree = "<group>";
+		};
 		00ED86A02189858E0057BECE = {
 			isa = PBXGroup;
 			children = (
+				0083587521F6FCCB00DC4D9F /* file.lua */,
+				00ED86DE218985A00057BECE /* src */,
+				0083594D21F7022C00DC4D9F /* code */,
 				00ED86AB2189858E0057BECE /* testLua */,
 				00ED86C42189858F0057BECE /* testLuaTests */,
 				00ED86CF2189858F0057BECE /* testLuaUITests */,
@@ -192,11 +311,12 @@
 		00ED86AB2189858E0057BECE /* testLua */ = {
 			isa = PBXGroup;
 			children = (
-				00ED86DE218985A00057BECE /* src */,
 				00ED86AC2189858E0057BECE /* AppDelegate.h */,
 				00ED86AD2189858E0057BECE /* AppDelegate.m */,
 				00ED86AF2189858E0057BECE /* ViewController.h */,
 				00ED86B02189858E0057BECE /* ViewController.m */,
+				0083598D21F70BB100DC4D9F /* TestObjClass.h */,
+				0083598E21F70BB100DC4D9F /* TestObjClass.m */,
 				00ED86B22189858E0057BECE /* Main.storyboard */,
 				00ED86B52189858F0057BECE /* Assets.xcassets */,
 				00ED86B72189858F0057BECE /* LaunchScreen.storyboard */,
@@ -393,6 +513,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0083587621F6FCCB00DC4D9F /* file.lua in Resources */,
 				00ED86B92189858F0057BECE /* LaunchScreen.storyboard in Resources */,
 				00ED86B62189858F0057BECE /* Assets.xcassets in Resources */,
 				00ED86B42189858E0057BECE /* Main.storyboard in Resources */,
@@ -422,12 +543,19 @@
 			files = (
 				00ED872F218985A00057BECE /* lmem.c in Sources */,
 				00ED8738218985A00057BECE /* ltm.c in Sources */,
+				0083598021F702A700DC4D9F /* LSCExportMethodDescriptor.m in Sources */,
 				00ED8729218985A00057BECE /* ldump.c in Sources */,
+				0083597B21F702A700DC4D9F /* LSCSession.m in Sources */,
+				0083597C21F702A700DC4D9F /* LSCContext.m in Sources */,
+				0083598521F702A700DC4D9F /* LSCDataExchanger.m in Sources */,
 				00ED872D218985A00057BECE /* ldblib.c in Sources */,
+				0083597F21F702A700DC4D9F /* LSCExportPropertyDescriptor.m in Sources */,
 				00ED8722218985A00057BECE /* lfunc.c in Sources */,
 				00ED8721218985A00057BECE /* lvm.c in Sources */,
+				0083598921F702A700DC4D9F /* LSCExportsTypeManager.m in Sources */,
 				00ED871D218985A00057BECE /* lstate.c in Sources */,
 				00ED8737218985A00057BECE /* llex.c in Sources */,
+				0083598F21F70BB100DC4D9F /* TestObjClass.m in Sources */,
 				00ED8723218985A00057BECE /* lstrlib.c in Sources */,
 				00ED8739218985A00057BECE /* ldo.c in Sources */,
 				00ED86B12189858E0057BECE /* ViewController.m in Sources */,
@@ -437,21 +565,31 @@
 				00ED8734218985A00057BECE /* lbaselib.c in Sources */,
 				00ED86BC2189858F0057BECE /* main.m in Sources */,
 				00ED86AE2189858E0057BECE /* AppDelegate.m in Sources */,
+				0083598221F702A700DC4D9F /* LSCVirtualInstance.m in Sources */,
 				00ED8735218985A00057BECE /* ldebug.c in Sources */,
 				00ED871A218985A00057BECE /* lauxlib.c in Sources */,
+				0083597D21F702A700DC4D9F /* LSCOperationQueue.m in Sources */,
 				00ED8733218985A00057BECE /* lapi.c in Sources */,
 				00ED8728218985A00057BECE /* ltable.c in Sources */,
+				0083598821F702A700DC4D9F /* LSCFunction.m in Sources */,
 				00ED872E218985A00057BECE /* lutf8lib.c in Sources */,
 				00ED8736218985A00057BECE /* lparser.c in Sources */,
 				00ED8727218985A00057BECE /* lctype.c in Sources */,
 				00ED871E218985A00057BECE /* lobject.c in Sources */,
 				00ED8724218985A00057BECE /* linit.c in Sources */,
+				0083598421F702A700DC4D9F /* LSCTmpValue.m in Sources */,
+				0083598721F702A700DC4D9F /* LSCTuple.m in Sources */,
 				00ED872A218985A00057BECE /* loslib.c in Sources */,
 				00ED8732218985A00057BECE /* ltablib.c in Sources */,
 				00ED8720218985A00057BECE /* loadlib.c in Sources */,
 				00ED872C218985A00057BECE /* lzio.c in Sources */,
+				0083598121F702A700DC4D9F /* LSCEngineAdapter.m in Sources */,
+				0083598321F702A700DC4D9F /* LSCExportTypeDescriptor.m in Sources */,
+				0083598621F702A700DC4D9F /* LSCManagedValue.m in Sources */,
+				0083597A21F702A700DC4D9F /* LSCPointer.m in Sources */,
 				00ED871C218985A00057BECE /* lopcodes.c in Sources */,
 				00ED8725218985A00057BECE /* lstring.c in Sources */,
+				0083597E21F702A700DC4D9F /* LSCValue.m in Sources */,
 				00ED871B218985A00057BECE /* liolib.c in Sources */,
 				00ED8726218985A00057BECE /* lundump.c in Sources */,
 				00ED8730218985A00057BECE /* lcorolib.c in Sources */,
