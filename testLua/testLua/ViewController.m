@@ -64,11 +64,14 @@
     [super viewDidLoad];
     LSCContext *context = [[LSCContext alloc] init];
    
+    //解析lua字符串
+    [context evalScriptFromString:@"print('Hello World');"];
+    //解析lua文件
     NSBundle *bundle = [NSBundle mainBundle];
     NSString *path = [bundle pathForResource:@"file" ofType:@"lua"];
     [context evalScriptFromFile:path];
-    
-     LSCValue *urlValue = [context getGlobalForName:@"url"];
+    //获取lua变量
+     LSCValue *urlValue = [context getGlobalForName:@"test"];
     NSLog(@"url = %@", [urlValue toString]);
 }
 
