@@ -62,19 +62,33 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self testLua1];
+}
+- (void)testLua1{
     LSCContext *context = [[LSCContext alloc] init];
-   
+    
+//    NSString *sPath = [[NSBundle mainBundle]pathForResource:@"module" ofType:@"lua"];
+//    [context addSearchPath:sPath];
     //解析lua字符串
     [context evalScriptFromString:@"print('Hello World');"];
     //解析lua文件
     NSBundle *bundle = [NSBundle mainBundle];
     NSString *path = [bundle pathForResource:@"file" ofType:@"lua"];
     [context evalScriptFromFile:path];
+    
     //获取lua变量
-     LSCValue *urlValue = [context getGlobalForName:@"test"];
+    LSCValue *urlValue = [context getGlobalForName:@"url"];
     NSLog(@"url = %@", [urlValue toString]);
+    LSCValue *value = [LSCValue stringValue:@"http://www.baidu.com"];
+    
+    //提供供lua使用的oc方法
+    [context registerMethodWithName:@"log" block:^LSCValue *(NSArray<LSCValue *> *arguments) {
+        NSLog(@"%@", [arguments[0] toString]);
+        return [LSCValue numberValue:@3];
+    }];
+    //ios调用lua方法
+    [context callMethodWithName:@"printUrl" arguments:@[value]];
 }
-
 
 
 @end

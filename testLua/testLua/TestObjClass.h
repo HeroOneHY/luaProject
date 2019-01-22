@@ -9,5 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "LSCExportType.h"
 @interface TestObjClass : NSObject<LSCExportType>
-+(NSString *)test;
+@property(nonatomic, strong)NSString *name;
+-(NSString *)test;
++(NSString *)test2;
 @end

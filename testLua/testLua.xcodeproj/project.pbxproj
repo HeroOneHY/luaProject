@@ -65,6 +65,7 @@
 		00ED8737218985A00057BECE /* llex.c in Sources */ = {isa = PBXBuildFile; fileRef = 00ED8714218985A00057BECE /* llex.c */; };
 		00ED8738218985A00057BECE /* ltm.c in Sources */ = {isa = PBXBuildFile; fileRef = 00ED8716218985A00057BECE /* ltm.c */; };
 		00ED8739218985A00057BECE /* ldo.c in Sources */ = {isa = PBXBuildFile; fileRef = 00ED8718218985A00057BECE /* ldo.c */; };
+		0496B20021F76D7A00902E1A /* module.lua in Resources */ = {isa = PBXBuildFile; fileRef = 0496B1FF21F76D7900902E1A /* module.lua */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -207,6 +208,7 @@
 		00ED8717218985A00057BECE /* lctype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lctype.h; sourceTree = "<group>"; };
 		00ED8718218985A00057BECE /* ldo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ldo.c; sourceTree = "<group>"; };
 		00ED8719218985A00057BECE /* lundump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lundump.h; sourceTree = "<group>"; };
+		0496B1FF21F76D7900902E1A /* module.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = module.lua; path = testLua/module.lua; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,6 +290,7 @@
 		00ED86A02189858E0057BECE = {
 			isa = PBXGroup;
 			children = (
+				0496B1FF21F76D7900902E1A /* module.lua */,
 				0083587521F6FCCB00DC4D9F /* file.lua */,
 				00ED86DE218985A00057BECE /* src */,
 				0083594D21F7022C00DC4D9F /* code */,
@@ -515,6 +518,7 @@
 			files = (
 				0083587621F6FCCB00DC4D9F /* file.lua in Resources */,
 				00ED86B92189858F0057BECE /* LaunchScreen.storyboard in Resources */,
+				0496B20021F76D7A00902E1A /* module.lua in Resources */,
 				00ED86B62189858F0057BECE /* Assets.xcassets in Resources */,
 				00ED86B42189858E0057BECE /* Main.storyboard in Resources */,
 			);
@@ -763,6 +767,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = testLua/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -779,6 +784,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = testLua/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
