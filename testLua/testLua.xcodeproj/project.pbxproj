@@ -25,6 +25,7 @@
 		0083598821F702A700DC4D9F /* LSCFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 0083597521F702A600DC4D9F /* LSCFunction.m */; };
 		0083598921F702A700DC4D9F /* LSCExportsTypeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0083597821F702A700DC4D9F /* LSCExportsTypeManager.m */; };
 		0083598F21F70BB100DC4D9F /* TestObjClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0083598E21F70BB100DC4D9F /* TestObjClass.m */; };
+		0083599121F8079200DC4D9F /* module.lua in Resources */ = {isa = PBXBuildFile; fileRef = 0083599021F8078E00DC4D9F /* module.lua */; };
 		00ED86AE2189858E0057BECE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ED86AD2189858E0057BECE /* AppDelegate.m */; };
 		00ED86B12189858E0057BECE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ED86B02189858E0057BECE /* ViewController.m */; };
 		00ED86B42189858E0057BECE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00ED86B22189858E0057BECE /* Main.storyboard */; };
@@ -65,7 +66,6 @@
 		00ED8737218985A00057BECE /* llex.c in Sources */ = {isa = PBXBuildFile; fileRef = 00ED8714218985A00057BECE /* llex.c */; };
 		00ED8738218985A00057BECE /* ltm.c in Sources */ = {isa = PBXBuildFile; fileRef = 00ED8716218985A00057BECE /* ltm.c */; };
 		00ED8739218985A00057BECE /* ldo.c in Sources */ = {isa = PBXBuildFile; fileRef = 00ED8718218985A00057BECE /* ldo.c */; };
-		0496B20021F76D7A00902E1A /* module.lua in Resources */ = {isa = PBXBuildFile; fileRef = 0496B1FF21F76D7900902E1A /* module.lua */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +133,7 @@
 		0083597921F702A700DC4D9F /* LSCManagedObjectProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSCManagedObjectProtocol.h; sourceTree = "<group>"; };
 		0083598D21F70BB100DC4D9F /* TestObjClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObjClass.h; sourceTree = "<group>"; };
 		0083598E21F70BB100DC4D9F /* TestObjClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObjClass.m; sourceTree = "<group>"; };
+		0083599021F8078E00DC4D9F /* module.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = module.lua; path = testLua/module.lua; sourceTree = "<group>"; };
 		00ED86A92189858E0057BECE /* testLua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testLua.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00ED86AC2189858E0057BECE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		00ED86AD2189858E0057BECE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -208,7 +209,6 @@
 		00ED8717218985A00057BECE /* lctype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lctype.h; sourceTree = "<group>"; };
 		00ED8718218985A00057BECE /* ldo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ldo.c; sourceTree = "<group>"; };
 		00ED8719218985A00057BECE /* lundump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lundump.h; sourceTree = "<group>"; };
-		0496B1FF21F76D7900902E1A /* module.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = module.lua; path = testLua/module.lua; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -290,8 +290,8 @@
 		00ED86A02189858E0057BECE = {
 			isa = PBXGroup;
 			children = (
-				0496B1FF21F76D7900902E1A /* module.lua */,
 				0083587521F6FCCB00DC4D9F /* file.lua */,
+				0083599021F8078E00DC4D9F /* module.lua */,
 				00ED86DE218985A00057BECE /* src */,
 				0083594D21F7022C00DC4D9F /* code */,
 				00ED86AB2189858E0057BECE /* testLua */,
@@ -518,7 +518,7 @@
 			files = (
 				0083587621F6FCCB00DC4D9F /* file.lua in Resources */,
 				00ED86B92189858F0057BECE /* LaunchScreen.storyboard in Resources */,
-				0496B20021F76D7A00902E1A /* module.lua in Resources */,
+				0083599121F8079200DC4D9F /* module.lua in Resources */,
 				00ED86B62189858F0057BECE /* Assets.xcassets in Resources */,
 				00ED86B42189858E0057BECE /* Main.storyboard in Resources */,
 			);
@@ -767,7 +767,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = testLua/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -784,7 +783,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = testLua/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
