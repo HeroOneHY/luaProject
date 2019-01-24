@@ -22,7 +22,7 @@
     //Lua环境的维护需要一个叫lua_State的结构体来支持，其贯穿了整个执行过程。因此，要使用Lua则需要先初始化一个lua_State结构体。
     self.state = luaL_newstate();    //创建新的lua_State结构体
     luaL_openlibs(self.state);        //加载标准库
-    lua_settop(self.state, 0);   //清空栈空间
+    lua_settop(self.state, 0);   //清空栈空间，栈有什么用？栈是oc和lua的桥梁用于临时存储数据
 }
 - (void)testLuacore{
     [self setUp];
