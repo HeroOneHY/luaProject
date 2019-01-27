@@ -61,6 +61,13 @@
         NSLog(@"Lua_state initial success");
     }
 }
+int printHelloWorld (lua_State*state){
+    
+    NSLog(@"hello");
+    
+    return 0;
+    
+}
 - (void)testLua0{
     [self setUp];
     User *usr = [[User alloc]init];
@@ -72,6 +79,7 @@
     instanceRef = (__bridge_retained void *)usr;
     lua_setglobal(self.state, "userdataVal");
    
+    lua_register(self.state, "fuc", printHelloWorld); //注册c方法
     NSString *luaFilePath = [[NSBundle mainBundle] pathForResource:@"file0" ofType:@"lua"];
     
     NSString *luaContent = [NSString stringWithContentsOfFile:luaFilePath
