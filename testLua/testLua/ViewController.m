@@ -11,6 +11,7 @@
 #import "lauxlib.h"
 #import "lualib.h"
 #import "LuaScriptCore.h"
+#import "User.h"
 @interface ViewController ()
     
 @property (nonatomic) lua_State *state;
@@ -62,7 +63,15 @@
 }
 - (void)testLua0{
     [self setUp];
-  
+    User *usr = [[User alloc]init];
+    usr.name=@"hehe";
+//    lua_pushlightuserdata(self.state, (__bridge void *)usr);
+//    lua_setglobal(self.state, "userdataVal");
+//
+    void *instanceRef = lua_newuserdata(self.state, sizeof(usr)); //setglobal只是创建了一个lua对象，这个对象不是和oc关联的，它是和oc数据独立的
+    instanceRef = (__bridge_retained void *)usr;
+    lua_setglobal(self.state, "userdataVal");
+   
     NSString *luaFilePath = [[NSBundle mainBundle] pathForResource:@"file0" ofType:@"lua"];
     
     NSString *luaContent = [NSString stringWithContentsOfFile:luaFilePath
@@ -89,6 +98,7 @@
         }
         NSLog(@"Lua_state initial success");
     }
+ 
 }
 - (void)viewDidLoad {
     [super viewDidLoad];

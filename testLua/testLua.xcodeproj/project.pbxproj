@@ -67,6 +67,7 @@
 		00ED8739218985A00057BECE /* ldo.c in Sources */ = {isa = PBXBuildFile; fileRef = 00ED8718218985A00057BECE /* ldo.c */; };
 		0496B20021F76D7A00902E1A /* module.lua in Resources */ = {isa = PBXBuildFile; fileRef = 0496B1FF21F76D7900902E1A /* module.lua */; };
 		0496B20221FD63CF00902E1A /* file0.lua in Resources */ = {isa = PBXBuildFile; fileRef = 0496B20121FD63CF00902E1A /* file0.lua */; };
+		0496B20521FD6CCB00902E1A /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0496B20421FD6CCB00902E1A /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -211,6 +212,8 @@
 		00ED8719218985A00057BECE /* lundump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lundump.h; sourceTree = "<group>"; };
 		0496B1FF21F76D7900902E1A /* module.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = module.lua; path = testLua/module.lua; sourceTree = "<group>"; };
 		0496B20121FD63CF00902E1A /* file0.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = file0.lua; path = testLua/file0.lua; sourceTree = "<group>"; };
+		0496B20321FD6CCB00902E1A /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		0496B20421FD6CCB00902E1A /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -321,6 +324,8 @@
 				00ED86AD2189858E0057BECE /* AppDelegate.m */,
 				00ED86AF2189858E0057BECE /* ViewController.h */,
 				00ED86B02189858E0057BECE /* ViewController.m */,
+				0496B20321FD6CCB00902E1A /* User.h */,
+				0496B20421FD6CCB00902E1A /* User.m */,
 				0083598D21F70BB100DC4D9F /* TestObjClass.h */,
 				0083598E21F70BB100DC4D9F /* TestObjClass.m */,
 				00ED86B22189858E0057BECE /* Main.storyboard */,
@@ -579,6 +584,7 @@
 				0083597D21F702A700DC4D9F /* LSCOperationQueue.m in Sources */,
 				00ED8733218985A00057BECE /* lapi.c in Sources */,
 				00ED8728218985A00057BECE /* ltable.c in Sources */,
+				0496B20521FD6CCB00902E1A /* User.m in Sources */,
 				0083598821F702A700DC4D9F /* LSCFunction.m in Sources */,
 				00ED872E218985A00057BECE /* lutf8lib.c in Sources */,
 				00ED8736218985A00057BECE /* lparser.c in Sources */,

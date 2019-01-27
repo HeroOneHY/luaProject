@@ -1,1 +1,2 @@
-print(package.path)
+userdataVal.name="hehe"
+print(userdataVal.name)
