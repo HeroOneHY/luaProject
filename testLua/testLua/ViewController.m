@@ -60,9 +60,39 @@
         NSLog(@"Lua_state initial success");
     }
 }
+- (void)testLua0{
+    [self setUp];
+  
+    NSString *luaFilePath = [[NSBundle mainBundle] pathForResource:@"file0" ofType:@"lua"];
+    
+    NSString *luaContent = [NSString stringWithContentsOfFile:luaFilePath
+                            
+                                                     encoding:NSUTF8StringEncoding
+                            
+                                                        error:nil];
+    int err;
+    if (luaContent == nil || [luaContent isEqualToString: @""]) { //判断脚本是否为空
+        NSLog(@"Lua_State initial fail，lua file is nil");
+    }else {
+        err = luaL_loadstring(self.state, [luaContent cStringUsingEncoding: NSUTF8StringEncoding]); //加载lua字符串
+      
+        if (0 != err) { //如果发生了错误，错误信息会放在栈顶
+            luaL_error(self.state, "cannot compile the lua file: %s",
+                       lua_tostring(self.state, -1));
+            return;
+        }
+        err = lua_pcall(self.state, 0, 0, 0); //表示调用lua函数。其中第二个参数为传入参数的数量，必须与压栈的参数数量一致；第三个参数为返回值的数量，表示调用后其放入栈中的返回值有多少个。必须调用这个才能执行lua脚本
+        if (0 != err) { //如果发生了错误，错误信息会放在栈顶
+            luaL_error(self.state, "cannot run the lua file: %s",
+                       lua_tostring(self.state, -1));
+            return;
+        }
+        NSLog(@"Lua_state initial success");
+    }
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self testLua1];
+    [self testLua0];
 }
 - (void)testLua1{
     LSCContext *context = [[LSCContext alloc] init];
