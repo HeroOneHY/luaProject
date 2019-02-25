@@ -172,7 +172,35 @@ int printHelloWorld (lua_State *state){
     
     lua_pop(self.state, 1);
     */
-
+     /*       //Table进行遍历
+    lua_getglobal(self.state, "aa");
+    
+    lua_pushnil(self.state);
+    
+    while (lua_next(self.state, -2)){
+        
+        NSInteger value = lua_tonumber(self.state, -1);
+        
+        if (lua_type(self.state, -2) == LUA_TSTRING) {
+            
+            const char *key = lua_tostring(self.state, -2);
+            
+            NSLog(@"key = %s, value = %ld", key, value);
+            
+        }
+        
+        else if (lua_type(self.state, -2) == LUA_TNUMBER) {
+            
+            NSInteger key = lua_tonumber(self.state, -2);
+            
+            NSLog(@"key = %ld, value = %ld", key, value);
+            
+        }
+        
+        lua_pop(self.state, 1);
+        
+        }
+      */
 }
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
         NSLog(@"%d",lua_gettop(self.state)) ;
