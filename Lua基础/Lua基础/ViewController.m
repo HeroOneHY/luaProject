@@ -31,7 +31,7 @@
     
     [super viewDidLoad];
       [self setUp];
-    [self fromOcToLua];
+   // [self fromOcToLua];
     NSString *luaFilePath = [[NSBundle mainBundle] pathForResource:@"file0" ofType:@"lua"];
     
     NSString *luaContent = [NSString stringWithContentsOfFile:luaFilePath
@@ -59,7 +59,7 @@
         
         NSLog(@"Lua_state initial success");
     }
-    
+    [self fromLuaToOc];
     // Do any additional setup after loading the view, typically from a nib.
 }
 int printHelloWorld (lua_State *state){
@@ -137,6 +137,42 @@ int printHelloWorld (lua_State *state){
     
     lua_setglobal(self.state, "userdataVal");
     */
+}
+- (void)fromLuaToOc{
+    /* 获取变量
+    lua_getglobal(self.state, "aa"); //把lua中的变量放入栈中
+    const char *value = lua_tostring(self.state, -1); //把栈中的变量取出
+    lua_pop(self.state, 1); //清除栈顶
+    NSLog(@"aa = %s",value);
+    */
+    /* 调用lua函数
+    lua_getglobal(self.state, "toOc");
+    lua_pushinteger(self.state, 1000);
+    lua_pushinteger(self.state, 24);
+    lua_pcall(self.state, 2, 1, 0);//其中第二个参数为传入参数的数量，必须与压栈的参数数量一致；第三个参数为返回值的数量，表示调用后其放入栈中的返回值有多少个。第四个参数是用于发生错误处理时的代码返回。
+    NSInteger retVal = lua_tonumber(self.state, -1);
+    lua_pop(self.state, 1);
+    NSLog(@"retVal = %ld", retVal);
+    */
+    /* Table的获取和遍历 （key，value）
+    lua_getglobal(self.state, "aa");
+    lua_getfield(self.state, -1, "key2");
+    NSInteger value = lua_tonumber(self.state, -1);
+    NSLog(@"value = %ld", value);
+    lua_pop(self.state, 1);
+    */
+    /* Table的获取和遍历 没有key
+    lua_getglobal(self.state, "aa");
+    
+    lua_rawgeti(self.state, -1, 2);
+    
+    NSInteger value = lua_tonumber(self.state, -1);
+    
+    NSLog(@"value = %ld", value);
+    
+    lua_pop(self.state, 1);
+    */
+
 }
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
         NSLog(@"%d",lua_gettop(self.state)) ;
