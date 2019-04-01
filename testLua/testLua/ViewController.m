@@ -27,10 +27,6 @@
 }
 - (void)testLuacore{
     [self setUp];
-    //    lua_pushinteger (self.state, 10);
-    //    lua_setglobal(self.state, "hehe");
-    //    const NSInteger value = lua_tointeger(self.state, -1);
-    //    NSLog(@"%ld",value);
     //加载lua脚本
     NSString *luaFilePath = [[NSBundle mainBundle] pathForResource:@"file" ofType:@"lua"];
     
@@ -50,14 +46,14 @@
                        lua_tostring(self.state, -1));
             return;
         }
-        /*
+    
          err = lua_pcall(self.state, 0, 0, 0); //表示调用lua函数。其中第二个参数为传入参数的数量，必须与压栈的参数数量一致；第三个参数为返回值的数量，表示调用后其放入栈中的返回值有多少个。
          if (0 != err) { //如果发生了错误，错误信息会放在栈顶
          luaL_error(self.state, "cannot run the lua file: %s",
          lua_tostring(self.state, -1));
          return;
          }
-         */
+         
         NSLog(@"Lua_state initial success");
     }
 }
@@ -71,7 +67,9 @@ int printHelloWorld (lua_State*state){
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-  
+
+    [self testLua1];
+
 }
 - (void)testLua1{
     LSCContext *context = [[LSCContext alloc] init];
@@ -83,7 +81,7 @@ int printHelloWorld (lua_State*state){
     //解析lua文件
     NSBundle *bundle = [NSBundle mainBundle];
     NSString *path = [bundle pathForResource:@"file" ofType:@"lua"];
-    [context evalScriptFromFile:path];
+    [context evalScriptFromFile:path]; //LSCExportsTypeManager用来管理供lua调用的oc类，它的instanceMethodRouteHandler方法用来生成oc对象
     
     //获取lua变量
     LSCValue *urlValue = [context getGlobalForName:@"url"];
