@@ -9,5 +9,7 @@
 #import "User.h"
 
 @implementation User
-
+-(void)test{
+    NSLog(@"hello");
+}
 @end

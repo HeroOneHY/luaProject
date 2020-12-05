@@ -1,0 +1,1447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D7572B3A2579179D0079E356 /* PrintLog.c in Sources */ = {isa = PBXBuildFile; fileRef = D7572B392579179D0079E356 /* PrintLog.c */; };
+		D791002E2570F7EE008B8037 /* lauxlib.c in Sources */ = {isa = PBXBuildFile; fileRef = D791FFF62570F7EE008B8037 /* lauxlib.c */; };
+		D791002F2570F7EE008B8037 /* liolib.c in Sources */ = {isa = PBXBuildFile; fileRef = D791FFFC2570F7EE008B8037 /* liolib.c */; };
+		D79100302570F7EE008B8037 /* lopcodes.c in Sources */ = {isa = PBXBuildFile; fileRef = D791FFFD2570F7EE008B8037 /* lopcodes.c */; };
+		D79100312570F7EE008B8037 /* lstate.c in Sources */ = {isa = PBXBuildFile; fileRef = D791FFFE2570F7EE008B8037 /* lstate.c */; };
+		D79100322570F7EE008B8037 /* lobject.c in Sources */ = {isa = PBXBuildFile; fileRef = D791FFFF2570F7EE008B8037 /* lobject.c */; };
+		D79100332570F7EE008B8037 /* print.c in Sources */ = {isa = PBXBuildFile; fileRef = D79100012570F7EE008B8037 /* print.c */; };
+		D79100342570F7EE008B8037 /* lmathlib.c in Sources */ = {isa = PBXBuildFile; fileRef = D79100022570F7EE008B8037 /* lmathlib.c */; };
+		D79100352570F7EE008B8037 /* loadlib.c in Sources */ = {isa = PBXBuildFile; fileRef = D79100032570F7EE008B8037 /* loadlib.c */; };
+		D79100362570F7EE008B8037 /* lvm.c in Sources */ = {isa = PBXBuildFile; fileRef = D79100042570F7EE008B8037 /* lvm.c */; };
+		D79100372570F7EE008B8037 /* lfunc.c in Sources */ = {isa = PBXBuildFile; fileRef = D79100052570F7EE008B8037 /* lfunc.c */; };
+		D79100382570F7EE008B8037 /* lstrlib.c in Sources */ = {isa = PBXBuildFile; fileRef = D79100062570F7EE008B8037 /* lstrlib.c */; };
+		D79100392570F7EE008B8037 /* lua.c in Sources */ = {isa = PBXBuildFile; fileRef = D79100072570F7EE008B8037 /* lua.c */; };
+		D791003A2570F7EE008B8037 /* linit.c in Sources */ = {isa = PBXBuildFile; fileRef = D79100092570F7EE008B8037 /* linit.c */; };
+		D791003B2570F7EE008B8037 /* lstring.c in Sources */ = {isa = PBXBuildFile; fileRef = D791000C2570F7EE008B8037 /* lstring.c */; };
+		D791003C2570F7EE008B8037 /* lundump.c in Sources */ = {isa = PBXBuildFile; fileRef = D791000E2570F7EE008B8037 /* lundump.c */; };
+		D791003D2570F7EE008B8037 /* luac.c in Sources */ = {isa = PBXBuildFile; fileRef = D79100102570F7EE008B8037 /* luac.c */; };
+		D791003E2570F7EE008B8037 /* ltable.c in Sources */ = {isa = PBXBuildFile; fileRef = D79100122570F7EE008B8037 /* ltable.c */; };
+		D791003F2570F7EE008B8037 /* ldump.c in Sources */ = {isa = PBXBuildFile; fileRef = D79100142570F7EE008B8037 /* ldump.c */; };
+		D79100402570F7EE008B8037 /* loslib.c in Sources */ = {isa = PBXBuildFile; fileRef = D79100182570F7EE008B8037 /* loslib.c */; };
+		D79100412570F7EE008B8037 /* lgc.c in Sources */ = {isa = PBXBuildFile; fileRef = D79100192570F7EE008B8037 /* lgc.c */; };
+		D79100422570F7EE008B8037 /* lzio.c in Sources */ = {isa = PBXBuildFile; fileRef = D791001A2570F7EE008B8037 /* lzio.c */; };
+		D79100432570F7EE008B8037 /* ldblib.c in Sources */ = {isa = PBXBuildFile; fileRef = D791001B2570F7EE008B8037 /* ldblib.c */; };
+		D79100442570F7EE008B8037 /* lmem.c in Sources */ = {isa = PBXBuildFile; fileRef = D791001C2570F7EE008B8037 /* lmem.c */; };
+		D79100452570F7EE008B8037 /* lcode.c in Sources */ = {isa = PBXBuildFile; fileRef = D79100202570F7EE008B8037 /* lcode.c */; };
+		D79100462570F7EE008B8037 /* ltablib.c in Sources */ = {isa = PBXBuildFile; fileRef = D79100212570F7EE008B8037 /* ltablib.c */; };
+		D79100472570F7EE008B8037 /* lapi.c in Sources */ = {isa = PBXBuildFile; fileRef = D79100222570F7EE008B8037 /* lapi.c */; };
+		D79100482570F7EE008B8037 /* lbaselib.c in Sources */ = {isa = PBXBuildFile; fileRef = D79100232570F7EE008B8037 /* lbaselib.c */; };
+		D79100492570F7EE008B8037 /* ldebug.c in Sources */ = {isa = PBXBuildFile; fileRef = D79100252570F7EE008B8037 /* ldebug.c */; };
+		D791004A2570F7EE008B8037 /* lparser.c in Sources */ = {isa = PBXBuildFile; fileRef = D79100272570F7EE008B8037 /* lparser.c */; };
+		D791004B2570F7EE008B8037 /* TAGS_NOTES.md in Resources */ = {isa = PBXBuildFile; fileRef = D79100282570F7EE008B8037 /* TAGS_NOTES.md */; };
+		D791004C2570F7EE008B8037 /* llex.c in Sources */ = {isa = PBXBuildFile; fileRef = D79100292570F7EE008B8037 /* llex.c */; };
+		D791004D2570F7EE008B8037 /* ltm.c in Sources */ = {isa = PBXBuildFile; fileRef = D791002B2570F7EE008B8037 /* ltm.c */; };
+		D791004E2570F7EE008B8037 /* ldo.c in Sources */ = {isa = PBXBuildFile; fileRef = D791002C2570F7EE008B8037 /* ldo.c */; };
+		D79101062570F7F6008B8037 /* LuaViewSDK-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D79100532570F7F5008B8037 /* LuaViewSDK-Info.plist */; };
+		D79101072570F7F6008B8037 /* Layout.c in Sources */ = {isa = PBXBuildFile; fileRef = D791005A2570F7F5008B8037 /* Layout.c */; };
+		D79101082570F7F6008B8037 /* JUFLXNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D791005B2570F7F5008B8037 /* JUFLXNode.m */; };
+		D79101092570F7F6008B8037 /* JUFLXLinearLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100612570F7F5008B8037 /* JUFLXLinearLayoutView.m */; };
+		D791010A2570F7F6008B8037 /* JUFLXCSSParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100652570F7F5008B8037 /* JUFLXCSSParser.m */; };
+		D791010B2570F7F6008B8037 /* UIView+JUFLXNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100662570F7F5008B8037 /* UIView+JUFLXNode.m */; };
+		D791010C2570F7F6008B8037 /* LVRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100692570F7F5008B8037 /* LVRSA.m */; };
+		D791010D2570F7F6008B8037 /* LVBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = D791006C2570F7F5008B8037 /* LVBlock.m */; };
+		D791010E2570F7F6008B8037 /* LVLoadingIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = D791006E2570F7F5008B8037 /* LVLoadingIndicator.m */; };
+		D791010F2570F7F6008B8037 /* LVTransform3D.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100712570F7F5008B8037 /* LVTransform3D.m */; };
+		D79101102570F7F6008B8037 /* LVPinchGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100722570F7F5008B8037 /* LVPinchGesture.m */; };
+		D79101112570F7F6008B8037 /* NSObject+LuaView.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100742570F7F5008B8037 /* NSObject+LuaView.m */; };
+		D79101122570F7F6008B8037 /* LVNativeObjBox.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100752570F7F5008B8037 /* LVNativeObjBox.m */; };
+		D79101132570F7F6008B8037 /* LVPagerIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100792570F7F5008B8037 /* LVPagerIndicator.m */; };
+		D79101142570F7F6008B8037 /* LVTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = D791007A2570F7F5008B8037 /* LVTextField.m */; };
+		D79101152570F7F6008B8037 /* UIView+LuaView.m in Sources */ = {isa = PBXBuildFile; fileRef = D791007B2570F7F5008B8037 /* UIView+LuaView.m */; };
+		D79101162570F7F6008B8037 /* LVScrollViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D791007C2570F7F5008B8037 /* LVScrollViewDelegate.m */; };
+		D79101172570F7F6008B8037 /* LVPagerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D791007E2570F7F5008B8037 /* LVPagerViewCell.m */; };
+		D79101182570F7F6008B8037 /* LVToast.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100822570F7F5008B8037 /* LVToast.m */; };
+		D79101192570F7F6008B8037 /* LVImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100832570F7F5008B8037 /* LVImage.m */; };
+		D791011A2570F7F6008B8037 /* LVBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100862570F7F5008B8037 /* LVBaseView.m */; };
+		D791011B2570F7F6008B8037 /* LVRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100872570F7F5008B8037 /* LVRefreshComponent.m */; };
+		D791011C2570F7F6008B8037 /* LVSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100882570F7F5008B8037 /* LVSystem.m */; };
+		D791011D2570F7F6008B8037 /* LVHeads.m in Sources */ = {isa = PBXBuildFile; fileRef = D791008A2570F7F5008B8037 /* LVHeads.m */; };
+		D791011E2570F7F6008B8037 /* LVCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = D791008D2570F7F5008B8037 /* LVCanvas.m */; };
+		D791011F2570F7F6008B8037 /* LVLongPressGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = D791008E2570F7F5008B8037 /* LVLongPressGesture.m */; };
+		D79101202570F7F6008B8037 /* LVBitmap.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100902570F7F5008B8037 /* LVBitmap.m */; };
+		D79101212570F7F6008B8037 /* LVTapGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100912570F7F5008B8037 /* LVTapGesture.m */; };
+		D79101222570F7F6008B8037 /* LVUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100922570F7F5008B8037 /* LVUtil.m */; };
+		D79101232570F7F6008B8037 /* LVAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100952570F7F5008B8037 /* LVAlert.m */; };
+		D79101242570F7F6008B8037 /* LVCustomPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100962570F7F5008B8037 /* LVCustomPanel.m */; };
+		D79101252570F7F6008B8037 /* LVEmptyRefreshCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100992570F7F5008B8037 /* LVEmptyRefreshCollectionView.m */; };
+		D79101262570F7F6008B8037 /* LVTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = D791009A2570F7F5008B8037 /* LVTimer.m */; };
+		D79101272570F7F6008B8037 /* LVButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D791009D2570F7F5008B8037 /* LVButton.m */; };
+		D79101282570F7F6008B8037 /* LVAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = D791009E2570F7F5008B8037 /* LVAnimator.m */; };
+		D79101292570F7F6008B8037 /* LVDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100A22570F7F5008B8037 /* LVDownloader.m */; };
+		D791012A2570F7F6008B8037 /* LVNetworkStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100A42570F7F5008B8037 /* LVNetworkStatus.m */; };
+		D791012B2570F7F6008B8037 /* LVSwipeGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100A52570F7F5008B8037 /* LVSwipeGesture.m */; };
+		D791012C2570F7F6008B8037 /* LVRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100A62570F7F5008B8037 /* LVRefreshConst.m */; };
+		D791012D2570F7F6008B8037 /* LVStyledString.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100A72570F7F5008B8037 /* LVStyledString.m */; };
+		D791012E2570F7F6008B8037 /* LVNinePatchImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100A92570F7F5008B8037 /* LVNinePatchImage.m */; };
+		D791012F2570F7F6008B8037 /* UIScrollView+LuaView.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100AA2570F7F5008B8037 /* UIScrollView+LuaView.m */; };
+		D79101302570F7F6008B8037 /* LVAnimate.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100AB2570F7F5008B8037 /* LVAnimate.m */; };
+		D79101312570F7F6008B8037 /* LVFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100AC2570F7F5008B8037 /* LVFlowLayout.m */; };
+		D79101322570F7F6008B8037 /* LVCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100AD2570F7F5008B8037 /* LVCollectionView.m */; };
+		D79101332570F7F6008B8037 /* LVPointerValueBox.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100AE2570F7F5008B8037 /* LVPointerValueBox.m */; };
+		D79101342570F7F6008B8037 /* LVCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100AF2570F7F5008B8037 /* LVCustomView.m */; };
+		D79101352570F7F6008B8037 /* LVDB.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100B02570F7F5008B8037 /* LVDB.m */; };
+		D79101362570F7F6008B8037 /* LVGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100B12570F7F5008B8037 /* LVGesture.m */; };
+		D79101372570F7F6008B8037 /* LVHttpResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100B22570F7F5008B8037 /* LVHttpResponse.m */; };
+		D79101382570F7F6008B8037 /* LVTypeConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100B82570F7F5008B8037 /* LVTypeConvert.m */; };
+		D79101392570F7F6008B8037 /* LVLuaObjBox.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100B92570F7F5008B8037 /* LVLuaObjBox.m */; };
+		D791013A2570F7F6008B8037 /* LVRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100BA2570F7F5008B8037 /* LVRefreshHeader.m */; };
+		D791013B2570F7F6008B8037 /* LVPanGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100BD2570F7F5008B8037 /* LVPanGesture.m */; };
+		D791013C2570F7F6008B8037 /* LVPagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100C12570F7F5008B8037 /* LVPagerView.m */; };
+		D791013D2570F7F6008B8037 /* LVStruct.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100C22570F7F5008B8037 /* LVStruct.m */; };
+		D791013E2570F7F6008B8037 /* LVClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100C32570F7F5008B8037 /* LVClassInfo.m */; };
+		D791013F2570F7F6008B8037 /* LVHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100C42570F7F5008B8037 /* LVHttp.m */; };
+		D79101402570F7F6008B8037 /* LVCollectionViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100C82570F7F5008B8037 /* LVCollectionViewDelegate.m */; };
+		D79101412570F7F6008B8037 /* LVCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100CB2570F7F5008B8037 /* LVCamera.m */; };
+		D79101422570F7F6008B8037 /* LVExGlobalFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100CE2570F7F5008B8037 /* LVExGlobalFunc.m */; };
+		D79101432570F7F6008B8037 /* LVMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100CF2570F7F5008B8037 /* LVMethod.m */; };
+		D79101442570F7F6008B8037 /* LVRotationGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100D12570F7F5008B8037 /* LVRotationGesture.m */; };
+		D79101452570F7F6008B8037 /* LVAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100D42570F7F5008B8037 /* LVAudioPlayer.m */; };
+		D79101462570F7F6008B8037 /* LVScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100D92570F7F5008B8037 /* LVScrollView.m */; };
+		D79101472570F7F6008B8037 /* UIScrollView+LVRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100DB2570F7F5008B8037 /* UIScrollView+LVRefresh.m */; };
+		D79101482570F7F6008B8037 /* LVCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100DC2570F7F5008B8037 /* LVCollectionViewCell.m */; };
+		D79101492570F7F6008B8037 /* LVData.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100DE2570F7F5008B8037 /* LVData.m */; };
+		D791014A2570F7F6008B8037 /* LVLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100E02570F7F5008B8037 /* LVLabel.m */; };
+		D791014B2570F7F6008B8037 /* LVDate.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100E12570F7F5008B8037 /* LVDate.m */; };
+		D791014C2570F7F6008B8037 /* LVNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100E42570F7F5008B8037 /* LVNavigation.m */; };
+		D791014D2570F7F6008B8037 /* LVFile.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100E52570F7F5008B8037 /* LVFile.m */; };
+		D791014E2570F7F6008B8037 /* LVEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100EE2570F7F5008B8037 /* LVEvent.m */; };
+		D791014F2570F7F6008B8037 /* LuaView.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100F02570F7F6008B8037 /* LuaView.m */; };
+		D79101502570F7F6008B8037 /* LVBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100F12570F7F6008B8037 /* LVBundle.m */; };
+		D79101512570F7F6008B8037 /* LViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100F22570F7F6008B8037 /* LViewController.m */; };
+		D79101522570F7F6008B8037 /* LuaViewCore.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100F32570F7F6008B8037 /* LuaViewCore.m */; };
+		D79101532570F7F6008B8037 /* debug.lua in Resources */ = {isa = PBXBuildFile; fileRef = D79100F72570F7F6008B8037 /* debug.lua */; };
+		D79101542570F7F6008B8037 /* LVDebuger.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100F82570F7F6008B8037 /* LVDebuger.m */; };
+		D79101552570F7F6008B8037 /* LVDebugConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100F92570F7F6008B8037 /* LVDebugConnection.m */; };
+		D79101562570F7F6008B8037 /* LVDebugLua.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100FA2570F7F6008B8037 /* LVDebugLua.m */; };
+		D79101572570F7F6008B8037 /* LView.m in Sources */ = {isa = PBXBuildFile; fileRef = D79100FC2570F7F6008B8037 /* LView.m */; };
+		D79101582570F7F6008B8037 /* LVPkgInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D79101012570F7F6008B8037 /* LVPkgInfo.m */; };
+		D79101592570F7F6008B8037 /* LVZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = D79101022570F7F6008B8037 /* LVZipArchive.m */; };
+		D791015A2570F7F6008B8037 /* LVPkgManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D79101032570F7F6008B8037 /* LVPkgManager.m */; };
+		D791015B2570F7F6008B8037 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D79101052570F7F6008B8037 /* Info.plist */; };
+		D79101662570FB54008B8037 /* demoA_Hello.lua in Resources */ = {isa = PBXBuildFile; fileRef = D79101652570FB54008B8037 /* demoA_Hello.lua */; };
+		D79101702570FCE3008B8037 /* demoZ_1212.lua in Resources */ = {isa = PBXBuildFile; fileRef = D79101682570FCE2008B8037 /* demoZ_1212.lua */; };
+		D79101712570FCE3008B8037 /* jhs.png in Resources */ = {isa = PBXBuildFile; fileRef = D79101692570FCE2008B8037 /* jhs.png */; };
+		D79101722570FCE3008B8037 /* enter.png in Resources */ = {isa = PBXBuildFile; fileRef = D791016A2570FCE2008B8037 /* enter.png */; };
+		D79101732570FCE3008B8037 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = D791016B2570FCE2008B8037 /* line.png */; };
+		D79101742570FCE3008B8037 /* enter10.png in Resources */ = {isa = PBXBuildFile; fileRef = D791016C2570FCE2008B8037 /* enter10.png */; };
+		D79101752570FCE3008B8037 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = D791016D2570FCE3008B8037 /* close.png */; };
+		D79101762570FCE3008B8037 /* hongbao.png in Resources */ = {isa = PBXBuildFile; fileRef = D791016E2570FCE3008B8037 /* hongbao.png */; };
+		D79101772570FCE3008B8037 /* enter11.png in Resources */ = {isa = PBXBuildFile; fileRef = D791016F2570FCE3008B8037 /* enter11.png */; };
+		D79101852570FD0C008B8037 /* JHSLuaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D791017A2570FD0C008B8037 /* JHSLuaViewController.m */; };
+		D79101862570FD0C008B8037 /* JHSLVCustomError.m in Sources */ = {isa = PBXBuildFile; fileRef = D791017D2570FD0C008B8037 /* JHSLVCustomError.m */; };
+		D79101872570FD0C008B8037 /* JHSLVImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D791017F2570FD0C008B8037 /* JHSLVImage.m */; };
+		D79101882570FD0C008B8037 /* JHSLVCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D79101802570FD0C008B8037 /* JHSLVCollectionView.m */; };
+		D79101892570FD0C008B8037 /* JHSLVButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D79101812570FD0C008B8037 /* JHSLVButton.m */; };
+		D791018A2570FD0C008B8037 /* JHSLVCustomLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = D79101822570FD0C008B8037 /* JHSLVCustomLoading.m */; };
+		D791018D2570FD13008B8037 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D791018B2570FD13008B8037 /* ViewController.m */; };
+		D791FDBE2570F6F7008B8037 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D791FDBD2570F6F7008B8037 /* AppDelegate.m */; };
+		D791FDC12570F6F7008B8037 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D791FDC02570F6F7008B8037 /* SceneDelegate.m */; };
+		D791FDC72570F6F7008B8037 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D791FDC52570F6F7008B8037 /* Main.storyboard */; };
+		D791FDC92570F6F8008B8037 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D791FDC82570F6F8008B8037 /* Assets.xcassets */; };
+		D791FDCC2570F6F8008B8037 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D791FDCA2570F6F8008B8037 /* LaunchScreen.storyboard */; };
+		D791FDCF2570F6F8008B8037 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D791FDCE2570F6F8008B8037 /* main.m */; };
+		D791FDD92570F6F9008B8037 /* testOcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D791FDD82570F6F9008B8037 /* testOcTests.m */; };
+		D791FDE42570F6F9008B8037 /* testOcUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D791FDE32570F6F9008B8037 /* testOcUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D791FDD52570F6F9008B8037 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D791FDB12570F6F7008B8037 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D791FDB82570F6F7008B8037;
+			remoteInfo = testOc;
+		};
+		D791FDE02570F6F9008B8037 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D791FDB12570F6F7008B8037 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D791FDB82570F6F7008B8037;
+			remoteInfo = testOc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D7572B382579179D0079E356 /* PrintLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrintLog.h; sourceTree = "<group>"; };
+		D7572B392579179D0079E356 /* PrintLog.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = PrintLog.c; sourceTree = "<group>"; };
+		D79100002570F7EE008B8037 /* lualib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lualib.h; sourceTree = "<group>"; };
+		D79100012570F7EE008B8037 /* print.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = print.c; sourceTree = "<group>"; };
+		D79100022570F7EE008B8037 /* lmathlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lmathlib.c; sourceTree = "<group>"; };
+		D79100032570F7EE008B8037 /* loadlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = loadlib.c; sourceTree = "<group>"; };
+		D79100042570F7EE008B8037 /* lvm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lvm.c; sourceTree = "<group>"; };
+		D79100052570F7EE008B8037 /* lfunc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lfunc.c; sourceTree = "<group>"; };
+		D79100062570F7EE008B8037 /* lstrlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lstrlib.c; sourceTree = "<group>"; };
+		D79100072570F7EE008B8037 /* lua.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lua.c; sourceTree = "<group>"; };
+		D79100082570F7EE008B8037 /* ldebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldebug.h; sourceTree = "<group>"; };
+		D79100092570F7EE008B8037 /* linit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = linit.c; sourceTree = "<group>"; };
+		D791000A2570F7EE008B8037 /* lcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lcode.h; sourceTree = "<group>"; };
+		D791000B2570F7EE008B8037 /* lapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lapi.h; sourceTree = "<group>"; };
+		D791000C2570F7EE008B8037 /* lstring.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lstring.c; sourceTree = "<group>"; };
+		D791000D2570F7EE008B8037 /* ldo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldo.h; sourceTree = "<group>"; };
+		D791000E2570F7EE008B8037 /* lundump.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lundump.c; sourceTree = "<group>"; };
+		D791000F2570F7EE008B8037 /* llex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = llex.h; sourceTree = "<group>"; };
+		D79100102570F7EE008B8037 /* luac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = luac.c; sourceTree = "<group>"; };
+		D79100112570F7EE008B8037 /* ltm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ltm.h; sourceTree = "<group>"; };
+		D79100122570F7EE008B8037 /* ltable.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ltable.c; sourceTree = "<group>"; };
+		D79100132570F7EE008B8037 /* lparser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lparser.h; sourceTree = "<group>"; };
+		D79100142570F7EE008B8037 /* ldump.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ldump.c; sourceTree = "<group>"; };
+		D79100152570F7EE008B8037 /* lobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lobject.h; sourceTree = "<group>"; };
+		D79100162570F7EE008B8037 /* lstate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lstate.h; sourceTree = "<group>"; };
+		D79100172570F7EE008B8037 /* lopcodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lopcodes.h; sourceTree = "<group>"; };
+		D79100182570F7EE008B8037 /* loslib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = loslib.c; sourceTree = "<group>"; };
+		D79100192570F7EE008B8037 /* lgc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lgc.c; sourceTree = "<group>"; };
+		D791001A2570F7EE008B8037 /* lzio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lzio.c; sourceTree = "<group>"; };
+		D791001B2570F7EE008B8037 /* ldblib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ldblib.c; sourceTree = "<group>"; };
+		D791001C2570F7EE008B8037 /* lmem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lmem.c; sourceTree = "<group>"; };
+		D791001D2570F7EE008B8037 /* lauxlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lauxlib.h; sourceTree = "<group>"; };
+		D791001E2570F7EE008B8037 /* lvm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lvm.h; sourceTree = "<group>"; };
+		D791001F2570F7EE008B8037 /* lstring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lstring.h; sourceTree = "<group>"; };
+		D79100202570F7EE008B8037 /* lcode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lcode.c; sourceTree = "<group>"; };
+		D79100212570F7EE008B8037 /* ltablib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ltablib.c; sourceTree = "<group>"; };
+		D79100222570F7EE008B8037 /* lapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lapi.c; sourceTree = "<group>"; };
+		D79100232570F7EE008B8037 /* lbaselib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lbaselib.c; sourceTree = "<group>"; };
+		D79100242570F7EE008B8037 /* lua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua.h; sourceTree = "<group>"; };
+		D79100252570F7EE008B8037 /* ldebug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ldebug.c; sourceTree = "<group>"; };
+		D79100262570F7EE008B8037 /* lfunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lfunc.h; sourceTree = "<group>"; };
+		D79100272570F7EE008B8037 /* lparser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lparser.c; sourceTree = "<group>"; };
+		D79100282570F7EE008B8037 /* TAGS_NOTES.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = TAGS_NOTES.md; sourceTree = "<group>"; };
+		D79100292570F7EE008B8037 /* llex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = llex.c; sourceTree = "<group>"; };
+		D791002A2570F7EE008B8037 /* ltable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ltable.h; sourceTree = "<group>"; };
+		D791002B2570F7EE008B8037 /* ltm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ltm.c; sourceTree = "<group>"; };
+		D791002C2570F7EE008B8037 /* ldo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ldo.c; sourceTree = "<group>"; };
+		D791002D2570F7EE008B8037 /* lundump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lundump.h; sourceTree = "<group>"; };
+		D79100532570F7F5008B8037 /* LuaViewSDK-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LuaViewSDK-Info.plist"; sourceTree = "<group>"; };
+		D79100552570F7F5008B8037 /* LViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LViewController.h; sourceTree = "<group>"; };
+		D79100562570F7F5008B8037 /* LVBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVBundle.h; sourceTree = "<group>"; };
+		D79100572570F7F5008B8037 /* LuaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuaView.h; sourceTree = "<group>"; };
+		D79100592570F7F5008B8037 /* JUFLXCSSParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JUFLXCSSParser.h; sourceTree = "<group>"; };
+		D791005A2570F7F5008B8037 /* Layout.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Layout.c; sourceTree = "<group>"; };
+		D791005B2570F7F5008B8037 /* JUFLXNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JUFLXNode.m; sourceTree = "<group>"; };
+		D791005C2570F7F5008B8037 /* JUFLXTargeNamespace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JUFLXTargeNamespace.h; sourceTree = "<group>"; };
+		D791005D2570F7F5008B8037 /* JUFLXLayoutDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JUFLXLayoutDefine.h; sourceTree = "<group>"; };
+		D791005E2570F7F5008B8037 /* JUFLXLayoutKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JUFLXLayoutKit.h; sourceTree = "<group>"; };
+		D79100602570F7F5008B8037 /* JUFLXLinearLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JUFLXLinearLayoutView.h; sourceTree = "<group>"; };
+		D79100612570F7F5008B8037 /* JUFLXLinearLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JUFLXLinearLayoutView.m; sourceTree = "<group>"; };
+		D79100622570F7F5008B8037 /* UIView+JUFLXNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JUFLXNode.h"; sourceTree = "<group>"; };
+		D79100632570F7F5008B8037 /* JUFLXNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JUFLXNode.h; sourceTree = "<group>"; };
+		D79100642570F7F5008B8037 /* Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Layout.h; sourceTree = "<group>"; };
+		D79100652570F7F5008B8037 /* JUFLXCSSParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JUFLXCSSParser.m; sourceTree = "<group>"; };
+		D79100662570F7F5008B8037 /* UIView+JUFLXNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JUFLXNode.m"; sourceTree = "<group>"; };
+		D79100672570F7F5008B8037 /* LuaViewCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuaViewCore.h; sourceTree = "<group>"; };
+		D79100692570F7F5008B8037 /* LVRSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVRSA.m; sourceTree = "<group>"; };
+		D791006A2570F7F5008B8037 /* LVRSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVRSA.h; sourceTree = "<group>"; };
+		D791006B2570F7F5008B8037 /* LView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LView.h; sourceTree = "<group>"; };
+		D791006C2570F7F5008B8037 /* LVBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVBlock.m; sourceTree = "<group>"; };
+		D791006E2570F7F5008B8037 /* LVLoadingIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVLoadingIndicator.m; sourceTree = "<group>"; };
+		D791006F2570F7F5008B8037 /* LVPagerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVPagerView.h; sourceTree = "<group>"; };
+		D79100702570F7F5008B8037 /* LVStruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVStruct.h; sourceTree = "<group>"; };
+		D79100712570F7F5008B8037 /* LVTransform3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVTransform3D.m; sourceTree = "<group>"; };
+		D79100722570F7F5008B8037 /* LVPinchGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVPinchGesture.m; sourceTree = "<group>"; };
+		D79100732570F7F5008B8037 /* LVPanGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVPanGesture.h; sourceTree = "<group>"; };
+		D79100742570F7F5008B8037 /* NSObject+LuaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LuaView.m"; sourceTree = "<group>"; };
+		D79100752570F7F5008B8037 /* LVNativeObjBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVNativeObjBox.m; sourceTree = "<group>"; };
+		D79100762570F7F5008B8037 /* LVRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVRefreshHeader.h; sourceTree = "<group>"; };
+		D79100772570F7F5008B8037 /* LVTypeConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVTypeConvert.h; sourceTree = "<group>"; };
+		D79100782570F7F5008B8037 /* LVLuaObjBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVLuaObjBox.h; sourceTree = "<group>"; };
+		D79100792570F7F5008B8037 /* LVPagerIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVPagerIndicator.m; sourceTree = "<group>"; };
+		D791007A2570F7F5008B8037 /* LVTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVTextField.m; sourceTree = "<group>"; };
+		D791007B2570F7F5008B8037 /* UIView+LuaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LuaView.m"; sourceTree = "<group>"; };
+		D791007C2570F7F5008B8037 /* LVScrollViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVScrollViewDelegate.m; sourceTree = "<group>"; };
+		D791007D2570F7F5008B8037 /* LVHttpResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVHttpResponse.h; sourceTree = "<group>"; };
+		D791007E2570F7F5008B8037 /* LVPagerViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVPagerViewCell.m; sourceTree = "<group>"; };
+		D791007F2570F7F5008B8037 /* LVGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVGesture.h; sourceTree = "<group>"; };
+		D79100802570F7F5008B8037 /* LVCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVCustomView.h; sourceTree = "<group>"; };
+		D79100812570F7F5008B8037 /* LVDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVDB.h; sourceTree = "<group>"; };
+		D79100822570F7F5008B8037 /* LVToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVToast.m; sourceTree = "<group>"; };
+		D79100832570F7F5008B8037 /* LVImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVImage.m; sourceTree = "<group>"; };
+		D79100842570F7F5008B8037 /* LVAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVAudioPlayer.h; sourceTree = "<group>"; };
+		D79100852570F7F5008B8037 /* LVRotationGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVRotationGesture.h; sourceTree = "<group>"; };
+		D79100862570F7F5008B8037 /* LVBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVBaseView.m; sourceTree = "<group>"; };
+		D79100872570F7F5008B8037 /* LVRefreshComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVRefreshComponent.m; sourceTree = "<group>"; };
+		D79100882570F7F5008B8037 /* LVSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVSystem.m; sourceTree = "<group>"; };
+		D79100892570F7F5008B8037 /* LVMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVMethod.h; sourceTree = "<group>"; };
+		D791008A2570F7F5008B8037 /* LVHeads.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVHeads.m; sourceTree = "<group>"; };
+		D791008B2570F7F5008B8037 /* LVExGlobalFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVExGlobalFunc.h; sourceTree = "<group>"; };
+		D791008C2570F7F5008B8037 /* LVCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVCamera.h; sourceTree = "<group>"; };
+		D791008D2570F7F5008B8037 /* LVCanvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVCanvas.m; sourceTree = "<group>"; };
+		D791008E2570F7F5008B8037 /* LVLongPressGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVLongPressGesture.m; sourceTree = "<group>"; };
+		D791008F2570F7F5008B8037 /* LVCollectionViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVCollectionViewDelegate.h; sourceTree = "<group>"; };
+		D79100902570F7F5008B8037 /* LVBitmap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVBitmap.m; sourceTree = "<group>"; };
+		D79100912570F7F5008B8037 /* LVTapGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVTapGesture.m; sourceTree = "<group>"; };
+		D79100922570F7F5008B8037 /* LVUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVUtil.m; sourceTree = "<group>"; };
+		D79100932570F7F5008B8037 /* LVHttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVHttp.h; sourceTree = "<group>"; };
+		D79100942570F7F5008B8037 /* LVClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVClassInfo.h; sourceTree = "<group>"; };
+		D79100952570F7F5008B8037 /* LVAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVAlert.m; sourceTree = "<group>"; };
+		D79100962570F7F5008B8037 /* LVCustomPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVCustomPanel.m; sourceTree = "<group>"; };
+		D79100972570F7F5008B8037 /* LVFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVFile.h; sourceTree = "<group>"; };
+		D79100982570F7F5008B8037 /* LVNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVNavigation.h; sourceTree = "<group>"; };
+		D79100992570F7F5008B8037 /* LVEmptyRefreshCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVEmptyRefreshCollectionView.m; sourceTree = "<group>"; };
+		D791009A2570F7F5008B8037 /* LVTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVTimer.m; sourceTree = "<group>"; };
+		D791009B2570F7F5008B8037 /* LVLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVLabel.h; sourceTree = "<group>"; };
+		D791009C2570F7F5008B8037 /* LVDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVDate.h; sourceTree = "<group>"; };
+		D791009D2570F7F5008B8037 /* LVButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVButton.m; sourceTree = "<group>"; };
+		D791009E2570F7F5008B8037 /* LVAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVAnimator.m; sourceTree = "<group>"; };
+		D791009F2570F7F5008B8037 /* LVData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVData.h; sourceTree = "<group>"; };
+		D79100A02570F7F5008B8037 /* LVCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVCollectionViewCell.h; sourceTree = "<group>"; };
+		D79100A12570F7F5008B8037 /* UIScrollView+LVRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+LVRefresh.h"; sourceTree = "<group>"; };
+		D79100A22570F7F5008B8037 /* LVDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVDownloader.m; sourceTree = "<group>"; };
+		D79100A32570F7F5008B8037 /* LVScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVScrollView.h; sourceTree = "<group>"; };
+		D79100A42570F7F5008B8037 /* LVNetworkStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVNetworkStatus.m; sourceTree = "<group>"; };
+		D79100A52570F7F5008B8037 /* LVSwipeGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVSwipeGesture.m; sourceTree = "<group>"; };
+		D79100A62570F7F5008B8037 /* LVRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVRefreshConst.m; sourceTree = "<group>"; };
+		D79100A72570F7F5008B8037 /* LVStyledString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVStyledString.m; sourceTree = "<group>"; };
+		D79100A82570F7F5008B8037 /* LVEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVEvent.h; sourceTree = "<group>"; };
+		D79100A92570F7F5008B8037 /* LVNinePatchImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVNinePatchImage.m; sourceTree = "<group>"; };
+		D79100AA2570F7F5008B8037 /* UIScrollView+LuaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+LuaView.m"; sourceTree = "<group>"; };
+		D79100AB2570F7F5008B8037 /* LVAnimate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVAnimate.m; sourceTree = "<group>"; };
+		D79100AC2570F7F5008B8037 /* LVFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVFlowLayout.m; sourceTree = "<group>"; };
+		D79100AD2570F7F5008B8037 /* LVCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVCollectionView.m; sourceTree = "<group>"; };
+		D79100AE2570F7F5008B8037 /* LVPointerValueBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVPointerValueBox.m; sourceTree = "<group>"; };
+		D79100AF2570F7F5008B8037 /* LVCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVCustomView.m; sourceTree = "<group>"; };
+		D79100B02570F7F5008B8037 /* LVDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVDB.m; sourceTree = "<group>"; };
+		D79100B12570F7F5008B8037 /* LVGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVGesture.m; sourceTree = "<group>"; };
+		D79100B22570F7F5008B8037 /* LVHttpResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVHttpResponse.m; sourceTree = "<group>"; };
+		D79100B32570F7F5008B8037 /* LVPagerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVPagerViewCell.h; sourceTree = "<group>"; };
+		D79100B42570F7F5008B8037 /* UIView+LuaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LuaView.h"; sourceTree = "<group>"; };
+		D79100B52570F7F5008B8037 /* LVScrollViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVScrollViewDelegate.h; sourceTree = "<group>"; };
+		D79100B62570F7F5008B8037 /* LVTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVTextField.h; sourceTree = "<group>"; };
+		D79100B72570F7F5008B8037 /* LVPagerIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVPagerIndicator.h; sourceTree = "<group>"; };
+		D79100B82570F7F5008B8037 /* LVTypeConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVTypeConvert.m; sourceTree = "<group>"; };
+		D79100B92570F7F5008B8037 /* LVLuaObjBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVLuaObjBox.m; sourceTree = "<group>"; };
+		D79100BA2570F7F5008B8037 /* LVRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVRefreshHeader.m; sourceTree = "<group>"; };
+		D79100BB2570F7F5008B8037 /* LVNativeObjBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVNativeObjBox.h; sourceTree = "<group>"; };
+		D79100BC2570F7F5008B8037 /* NSObject+LuaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LuaView.h"; sourceTree = "<group>"; };
+		D79100BD2570F7F5008B8037 /* LVPanGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVPanGesture.m; sourceTree = "<group>"; };
+		D79100BE2570F7F5008B8037 /* LVPinchGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVPinchGesture.h; sourceTree = "<group>"; };
+		D79100BF2570F7F5008B8037 /* LVTransform3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVTransform3D.h; sourceTree = "<group>"; };
+		D79100C02570F7F5008B8037 /* LVLoadingIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVLoadingIndicator.h; sourceTree = "<group>"; };
+		D79100C12570F7F5008B8037 /* LVPagerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVPagerView.m; sourceTree = "<group>"; };
+		D79100C22570F7F5008B8037 /* LVStruct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVStruct.m; sourceTree = "<group>"; };
+		D79100C32570F7F5008B8037 /* LVClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVClassInfo.m; sourceTree = "<group>"; };
+		D79100C42570F7F5008B8037 /* LVHttp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVHttp.m; sourceTree = "<group>"; };
+		D79100C52570F7F5008B8037 /* LVAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVAlert.h; sourceTree = "<group>"; };
+		D79100C62570F7F5008B8037 /* LVTapGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVTapGesture.h; sourceTree = "<group>"; };
+		D79100C72570F7F5008B8037 /* LVUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVUtil.h; sourceTree = "<group>"; };
+		D79100C82570F7F5008B8037 /* LVCollectionViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVCollectionViewDelegate.m; sourceTree = "<group>"; };
+		D79100C92570F7F5008B8037 /* LVBitmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVBitmap.h; sourceTree = "<group>"; };
+		D79100CA2570F7F5008B8037 /* LVLongPressGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVLongPressGesture.h; sourceTree = "<group>"; };
+		D79100CB2570F7F5008B8037 /* LVCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVCamera.m; sourceTree = "<group>"; };
+		D79100CC2570F7F5008B8037 /* LVCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVCanvas.h; sourceTree = "<group>"; };
+		D79100CD2570F7F5008B8037 /* LVHeads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVHeads.h; sourceTree = "<group>"; };
+		D79100CE2570F7F5008B8037 /* LVExGlobalFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVExGlobalFunc.m; sourceTree = "<group>"; };
+		D79100CF2570F7F5008B8037 /* LVMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVMethod.m; sourceTree = "<group>"; };
+		D79100D02570F7F5008B8037 /* LVSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVSystem.h; sourceTree = "<group>"; };
+		D79100D12570F7F5008B8037 /* LVRotationGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVRotationGesture.m; sourceTree = "<group>"; };
+		D79100D22570F7F5008B8037 /* LVRefreshComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVRefreshComponent.h; sourceTree = "<group>"; };
+		D79100D32570F7F5008B8037 /* LVBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVBaseView.h; sourceTree = "<group>"; };
+		D79100D42570F7F5008B8037 /* LVAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVAudioPlayer.m; sourceTree = "<group>"; };
+		D79100D52570F7F5008B8037 /* LVToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVToast.h; sourceTree = "<group>"; };
+		D79100D62570F7F5008B8037 /* LVImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVImage.h; sourceTree = "<group>"; };
+		D79100D72570F7F5008B8037 /* LVSwipeGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVSwipeGesture.h; sourceTree = "<group>"; };
+		D79100D82570F7F5008B8037 /* LVNetworkStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVNetworkStatus.h; sourceTree = "<group>"; };
+		D79100D92570F7F5008B8037 /* LVScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVScrollView.m; sourceTree = "<group>"; };
+		D79100DA2570F7F5008B8037 /* LVDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVDownloader.h; sourceTree = "<group>"; };
+		D79100DB2570F7F5008B8037 /* UIScrollView+LVRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+LVRefresh.m"; sourceTree = "<group>"; };
+		D79100DC2570F7F5008B8037 /* LVCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVCollectionViewCell.m; sourceTree = "<group>"; };
+		D79100DD2570F7F5008B8037 /* LVAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVAnimator.h; sourceTree = "<group>"; };
+		D79100DE2570F7F5008B8037 /* LVData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVData.m; sourceTree = "<group>"; };
+		D79100DF2570F7F5008B8037 /* LVButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVButton.h; sourceTree = "<group>"; };
+		D79100E02570F7F5008B8037 /* LVLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVLabel.m; sourceTree = "<group>"; };
+		D79100E12570F7F5008B8037 /* LVDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVDate.m; sourceTree = "<group>"; };
+		D79100E22570F7F5008B8037 /* LVTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVTimer.h; sourceTree = "<group>"; };
+		D79100E32570F7F5008B8037 /* LVEmptyRefreshCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVEmptyRefreshCollectionView.h; sourceTree = "<group>"; };
+		D79100E42570F7F5008B8037 /* LVNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVNavigation.m; sourceTree = "<group>"; };
+		D79100E52570F7F5008B8037 /* LVFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVFile.m; sourceTree = "<group>"; };
+		D79100E62570F7F5008B8037 /* LVCustomPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVCustomPanel.h; sourceTree = "<group>"; };
+		D79100E72570F7F5008B8037 /* LVPointerValueBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVPointerValueBox.h; sourceTree = "<group>"; };
+		D79100E82570F7F5008B8037 /* LVCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVCollectionView.h; sourceTree = "<group>"; };
+		D79100E92570F7F5008B8037 /* LVFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVFlowLayout.h; sourceTree = "<group>"; };
+		D79100EA2570F7F5008B8037 /* LVAnimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVAnimate.h; sourceTree = "<group>"; };
+		D79100EB2570F7F5008B8037 /* UIScrollView+LuaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+LuaView.h"; sourceTree = "<group>"; };
+		D79100EC2570F7F5008B8037 /* LVNinePatchImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVNinePatchImage.h; sourceTree = "<group>"; };
+		D79100ED2570F7F5008B8037 /* LVStyledString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVStyledString.h; sourceTree = "<group>"; };
+		D79100EE2570F7F5008B8037 /* LVEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVEvent.m; sourceTree = "<group>"; };
+		D79100EF2570F7F6008B8037 /* LVRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVRefreshConst.h; sourceTree = "<group>"; };
+		D79100F02570F7F6008B8037 /* LuaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuaView.m; sourceTree = "<group>"; };
+		D79100F12570F7F6008B8037 /* LVBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVBundle.m; sourceTree = "<group>"; };
+		D79100F22570F7F6008B8037 /* LViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LViewController.m; sourceTree = "<group>"; };
+		D79100F32570F7F6008B8037 /* LuaViewCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuaViewCore.m; sourceTree = "<group>"; };
+		D79100F52570F7F6008B8037 /* LVDebuger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVDebuger.h; sourceTree = "<group>"; };
+		D79100F62570F7F6008B8037 /* LVDebugConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVDebugConnection.h; sourceTree = "<group>"; };
+		D79100F72570F7F6008B8037 /* debug.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = debug.lua; sourceTree = "<group>"; };
+		D79100F82570F7F6008B8037 /* LVDebuger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVDebuger.m; sourceTree = "<group>"; };
+		D79100F92570F7F6008B8037 /* LVDebugConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVDebugConnection.m; sourceTree = "<group>"; };
+		D79100FA2570F7F6008B8037 /* LVDebugLua.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVDebugLua.m; sourceTree = "<group>"; };
+		D79100FB2570F7F6008B8037 /* LVBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVBlock.h; sourceTree = "<group>"; };
+		D79100FC2570F7F6008B8037 /* LView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LView.m; sourceTree = "<group>"; };
+		D79100FE2570F7F6008B8037 /* LVPkgInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVPkgInfo.h; sourceTree = "<group>"; };
+		D79100FF2570F7F6008B8037 /* LVZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVZipArchive.h; sourceTree = "<group>"; };
+		D79101002570F7F6008B8037 /* LVPkgManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVPkgManager.h; sourceTree = "<group>"; };
+		D79101012570F7F6008B8037 /* LVPkgInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVPkgInfo.m; sourceTree = "<group>"; };
+		D79101022570F7F6008B8037 /* LVZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVZipArchive.m; sourceTree = "<group>"; };
+		D79101032570F7F6008B8037 /* LVPkgManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVPkgManager.m; sourceTree = "<group>"; };
+		D79101042570F7F6008B8037 /* LuaViewSDK-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LuaViewSDK-Prefix.pch"; sourceTree = "<group>"; };
+		D79101052570F7F6008B8037 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D79101652570FB54008B8037 /* demoA_Hello.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = demoA_Hello.lua; sourceTree = "<group>"; };
+		D79101682570FCE2008B8037 /* demoZ_1212.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = demoZ_1212.lua; sourceTree = "<group>"; };
+		D79101692570FCE2008B8037 /* jhs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jhs.png; sourceTree = "<group>"; };
+		D791016A2570FCE2008B8037 /* enter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enter.png; sourceTree = "<group>"; };
+		D791016B2570FCE2008B8037 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
+		D791016C2570FCE2008B8037 /* enter10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enter10.png; sourceTree = "<group>"; };
+		D791016D2570FCE3008B8037 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		D791016E2570FCE3008B8037 /* hongbao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hongbao.png; sourceTree = "<group>"; };
+		D791016F2570FCE3008B8037 /* enter11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enter11.png; sourceTree = "<group>"; };
+		D79101792570FD0C008B8037 /* JHSLVCustomError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSLVCustomError.h; sourceTree = "<group>"; };
+		D791017A2570FD0C008B8037 /* JHSLuaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSLuaViewController.m; sourceTree = "<group>"; };
+		D791017B2570FD0C008B8037 /* JHSLVImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSLVImage.h; sourceTree = "<group>"; };
+		D791017C2570FD0C008B8037 /* JHSLVCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSLVCollectionView.h; sourceTree = "<group>"; };
+		D791017D2570FD0C008B8037 /* JHSLVCustomError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSLVCustomError.m; sourceTree = "<group>"; };
+		D791017E2570FD0C008B8037 /* JHSLVButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSLVButton.h; sourceTree = "<group>"; };
+		D791017F2570FD0C008B8037 /* JHSLVImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSLVImage.m; sourceTree = "<group>"; };
+		D79101802570FD0C008B8037 /* JHSLVCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSLVCollectionView.m; sourceTree = "<group>"; };
+		D79101812570FD0C008B8037 /* JHSLVButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSLVButton.m; sourceTree = "<group>"; };
+		D79101822570FD0C008B8037 /* JHSLVCustomLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSLVCustomLoading.m; sourceTree = "<group>"; };
+		D79101832570FD0C008B8037 /* JHSLVCustomLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSLVCustomLoading.h; sourceTree = "<group>"; };
+		D79101842570FD0C008B8037 /* JHSLuaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSLuaViewController.h; sourceTree = "<group>"; };
+		D791018B2570FD13008B8037 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D791018C2570FD13008B8037 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D791FDB92570F6F7008B8037 /* testOc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testOc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D791FDBC2570F6F7008B8037 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D791FDBD2570F6F7008B8037 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D791FDBF2570F6F7008B8037 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		D791FDC02570F6F7008B8037 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		D791FDC62570F6F7008B8037 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D791FDC82570F6F8008B8037 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D791FDCB2570F6F8008B8037 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D791FDCD2570F6F8008B8037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D791FDCE2570F6F8008B8037 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D791FDD42570F6F9008B8037 /* testOcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testOcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D791FDD82570F6F9008B8037 /* testOcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testOcTests.m; sourceTree = "<group>"; };
+		D791FDDA2570F6F9008B8037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D791FDDF2570F6F9008B8037 /* testOcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testOcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D791FDE32570F6F9008B8037 /* testOcUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testOcUITests.m; sourceTree = "<group>"; };
+		D791FDE52570F6F9008B8037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D791FFF62570F7EE008B8037 /* lauxlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lauxlib.c; sourceTree = "<group>"; };
+		D791FFF72570F7EE008B8037 /* lmem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lmem.h; sourceTree = "<group>"; };
+		D791FFF82570F7EE008B8037 /* llimits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = llimits.h; sourceTree = "<group>"; };
+		D791FFF92570F7EE008B8037 /* luaconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = luaconf.h; sourceTree = "<group>"; };
+		D791FFFA2570F7EE008B8037 /* lzio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lzio.h; sourceTree = "<group>"; };
+		D791FFFB2570F7EE008B8037 /* lgc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lgc.h; sourceTree = "<group>"; };
+		D791FFFC2570F7EE008B8037 /* liolib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = liolib.c; sourceTree = "<group>"; };
+		D791FFFD2570F7EE008B8037 /* lopcodes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lopcodes.c; sourceTree = "<group>"; };
+		D791FFFE2570F7EE008B8037 /* lstate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lstate.c; sourceTree = "<group>"; };
+		D791FFFF2570F7EE008B8037 /* lobject.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lobject.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D791FDB62570F6F7008B8037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D791FDD12570F6F9008B8037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D791FDDC2570F6F9008B8037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D79100522570F7F5008B8037 /* fuacking */ = {
+			isa = PBXGroup;
+			children = (
+				D79100532570F7F5008B8037 /* LuaViewSDK-Info.plist */,
+				D79100542570F7F5008B8037 /* Classes */,
+				D79101042570F7F6008B8037 /* LuaViewSDK-Prefix.pch */,
+				D79101052570F7F6008B8037 /* Info.plist */,
+			);
+			path = fuacking;
+			sourceTree = "<group>";
+		};
+		D79100542570F7F5008B8037 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D79100552570F7F5008B8037 /* LViewController.h */,
+				D79100562570F7F5008B8037 /* LVBundle.h */,
+				D79100572570F7F5008B8037 /* LuaView.h */,
+				D79100582570F7F5008B8037 /* layout */,
+				D79100672570F7F5008B8037 /* LuaViewCore.h */,
+				D79100682570F7F5008B8037 /* RSA */,
+				D791006B2570F7F5008B8037 /* LView.h */,
+				D791006C2570F7F5008B8037 /* LVBlock.m */,
+				D791006D2570F7F5008B8037 /* lvsdk */,
+				D79100F02570F7F6008B8037 /* LuaView.m */,
+				D79100F12570F7F6008B8037 /* LVBundle.m */,
+				D79100F22570F7F6008B8037 /* LViewController.m */,
+				D79100F32570F7F6008B8037 /* LuaViewCore.m */,
+				D79100F42570F7F6008B8037 /* lvdebug */,
+				D79100FB2570F7F6008B8037 /* LVBlock.h */,
+				D79100FC2570F7F6008B8037 /* LView.m */,
+				D79100FD2570F7F6008B8037 /* PKG */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D79100582570F7F5008B8037 /* layout */ = {
+			isa = PBXGroup;
+			children = (
+				D79100592570F7F5008B8037 /* JUFLXCSSParser.h */,
+				D791005A2570F7F5008B8037 /* Layout.c */,
+				D791005B2570F7F5008B8037 /* JUFLXNode.m */,
+				D791005C2570F7F5008B8037 /* JUFLXTargeNamespace.h */,
+				D791005D2570F7F5008B8037 /* JUFLXLayoutDefine.h */,
+				D791005E2570F7F5008B8037 /* JUFLXLayoutKit.h */,
+				D791005F2570F7F5008B8037 /* LayoutExtensions */,
+				D79100622570F7F5008B8037 /* UIView+JUFLXNode.h */,
+				D79100632570F7F5008B8037 /* JUFLXNode.h */,
+				D79100642570F7F5008B8037 /* Layout.h */,
+				D79100652570F7F5008B8037 /* JUFLXCSSParser.m */,
+				D79100662570F7F5008B8037 /* UIView+JUFLXNode.m */,
+			);
+			path = layout;
+			sourceTree = "<group>";
+		};
+		D791005F2570F7F5008B8037 /* LayoutExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				D79100602570F7F5008B8037 /* JUFLXLinearLayoutView.h */,
+				D79100612570F7F5008B8037 /* JUFLXLinearLayoutView.m */,
+			);
+			path = LayoutExtensions;
+			sourceTree = "<group>";
+		};
+		D79100682570F7F5008B8037 /* RSA */ = {
+			isa = PBXGroup;
+			children = (
+				D79100692570F7F5008B8037 /* LVRSA.m */,
+				D791006A2570F7F5008B8037 /* LVRSA.h */,
+			);
+			path = RSA;
+			sourceTree = "<group>";
+		};
+		D791006D2570F7F5008B8037 /* lvsdk */ = {
+			isa = PBXGroup;
+			children = (
+				D791006E2570F7F5008B8037 /* LVLoadingIndicator.m */,
+				D791006F2570F7F5008B8037 /* LVPagerView.h */,
+				D79100702570F7F5008B8037 /* LVStruct.h */,
+				D79100712570F7F5008B8037 /* LVTransform3D.m */,
+				D79100722570F7F5008B8037 /* LVPinchGesture.m */,
+				D79100732570F7F5008B8037 /* LVPanGesture.h */,
+				D79100742570F7F5008B8037 /* NSObject+LuaView.m */,
+				D79100752570F7F5008B8037 /* LVNativeObjBox.m */,
+				D79100762570F7F5008B8037 /* LVRefreshHeader.h */,
+				D79100772570F7F5008B8037 /* LVTypeConvert.h */,
+				D79100782570F7F5008B8037 /* LVLuaObjBox.h */,
+				D79100792570F7F5008B8037 /* LVPagerIndicator.m */,
+				D791007A2570F7F5008B8037 /* LVTextField.m */,
+				D791007B2570F7F5008B8037 /* UIView+LuaView.m */,
+				D791007C2570F7F5008B8037 /* LVScrollViewDelegate.m */,
+				D791007D2570F7F5008B8037 /* LVHttpResponse.h */,
+				D791007E2570F7F5008B8037 /* LVPagerViewCell.m */,
+				D791007F2570F7F5008B8037 /* LVGesture.h */,
+				D79100802570F7F5008B8037 /* LVCustomView.h */,
+				D79100812570F7F5008B8037 /* LVDB.h */,
+				D79100822570F7F5008B8037 /* LVToast.m */,
+				D79100832570F7F5008B8037 /* LVImage.m */,
+				D79100842570F7F5008B8037 /* LVAudioPlayer.h */,
+				D79100852570F7F5008B8037 /* LVRotationGesture.h */,
+				D79100862570F7F5008B8037 /* LVBaseView.m */,
+				D79100872570F7F5008B8037 /* LVRefreshComponent.m */,
+				D79100882570F7F5008B8037 /* LVSystem.m */,
+				D79100892570F7F5008B8037 /* LVMethod.h */,
+				D791008A2570F7F5008B8037 /* LVHeads.m */,
+				D791008B2570F7F5008B8037 /* LVExGlobalFunc.h */,
+				D791008C2570F7F5008B8037 /* LVCamera.h */,
+				D791008D2570F7F5008B8037 /* LVCanvas.m */,
+				D791008E2570F7F5008B8037 /* LVLongPressGesture.m */,
+				D791008F2570F7F5008B8037 /* LVCollectionViewDelegate.h */,
+				D79100902570F7F5008B8037 /* LVBitmap.m */,
+				D79100912570F7F5008B8037 /* LVTapGesture.m */,
+				D79100922570F7F5008B8037 /* LVUtil.m */,
+				D79100932570F7F5008B8037 /* LVHttp.h */,
+				D79100942570F7F5008B8037 /* LVClassInfo.h */,
+				D79100952570F7F5008B8037 /* LVAlert.m */,
+				D79100962570F7F5008B8037 /* LVCustomPanel.m */,
+				D79100972570F7F5008B8037 /* LVFile.h */,
+				D79100982570F7F5008B8037 /* LVNavigation.h */,
+				D79100992570F7F5008B8037 /* LVEmptyRefreshCollectionView.m */,
+				D791009A2570F7F5008B8037 /* LVTimer.m */,
+				D791009B2570F7F5008B8037 /* LVLabel.h */,
+				D791009C2570F7F5008B8037 /* LVDate.h */,
+				D791009D2570F7F5008B8037 /* LVButton.m */,
+				D791009E2570F7F5008B8037 /* LVAnimator.m */,
+				D791009F2570F7F5008B8037 /* LVData.h */,
+				D79100A02570F7F5008B8037 /* LVCollectionViewCell.h */,
+				D79100A12570F7F5008B8037 /* UIScrollView+LVRefresh.h */,
+				D79100A22570F7F5008B8037 /* LVDownloader.m */,
+				D79100A32570F7F5008B8037 /* LVScrollView.h */,
+				D79100A42570F7F5008B8037 /* LVNetworkStatus.m */,
+				D79100A52570F7F5008B8037 /* LVSwipeGesture.m */,
+				D79100A62570F7F5008B8037 /* LVRefreshConst.m */,
+				D79100A72570F7F5008B8037 /* LVStyledString.m */,
+				D79100A82570F7F5008B8037 /* LVEvent.h */,
+				D79100A92570F7F5008B8037 /* LVNinePatchImage.m */,
+				D79100AA2570F7F5008B8037 /* UIScrollView+LuaView.m */,
+				D79100AB2570F7F5008B8037 /* LVAnimate.m */,
+				D79100AC2570F7F5008B8037 /* LVFlowLayout.m */,
+				D79100AD2570F7F5008B8037 /* LVCollectionView.m */,
+				D79100AE2570F7F5008B8037 /* LVPointerValueBox.m */,
+				D79100AF2570F7F5008B8037 /* LVCustomView.m */,
+				D79100B02570F7F5008B8037 /* LVDB.m */,
+				D79100B12570F7F5008B8037 /* LVGesture.m */,
+				D79100B22570F7F5008B8037 /* LVHttpResponse.m */,
+				D79100B32570F7F5008B8037 /* LVPagerViewCell.h */,
+				D79100B42570F7F5008B8037 /* UIView+LuaView.h */,
+				D79100B52570F7F5008B8037 /* LVScrollViewDelegate.h */,
+				D79100B62570F7F5008B8037 /* LVTextField.h */,
+				D79100B72570F7F5008B8037 /* LVPagerIndicator.h */,
+				D79100B82570F7F5008B8037 /* LVTypeConvert.m */,
+				D79100B92570F7F5008B8037 /* LVLuaObjBox.m */,
+				D79100BA2570F7F5008B8037 /* LVRefreshHeader.m */,
+				D79100BB2570F7F5008B8037 /* LVNativeObjBox.h */,
+				D79100BC2570F7F5008B8037 /* NSObject+LuaView.h */,
+				D79100BD2570F7F5008B8037 /* LVPanGesture.m */,
+				D79100BE2570F7F5008B8037 /* LVPinchGesture.h */,
+				D79100BF2570F7F5008B8037 /* LVTransform3D.h */,
+				D79100C02570F7F5008B8037 /* LVLoadingIndicator.h */,
+				D79100C12570F7F5008B8037 /* LVPagerView.m */,
+				D79100C22570F7F5008B8037 /* LVStruct.m */,
+				D79100C32570F7F5008B8037 /* LVClassInfo.m */,
+				D79100C42570F7F5008B8037 /* LVHttp.m */,
+				D79100C52570F7F5008B8037 /* LVAlert.h */,
+				D79100C62570F7F5008B8037 /* LVTapGesture.h */,
+				D79100C72570F7F5008B8037 /* LVUtil.h */,
+				D79100C82570F7F5008B8037 /* LVCollectionViewDelegate.m */,
+				D79100C92570F7F5008B8037 /* LVBitmap.h */,
+				D79100CA2570F7F5008B8037 /* LVLongPressGesture.h */,
+				D79100CB2570F7F5008B8037 /* LVCamera.m */,
+				D79100CC2570F7F5008B8037 /* LVCanvas.h */,
+				D79100CD2570F7F5008B8037 /* LVHeads.h */,
+				D79100CE2570F7F5008B8037 /* LVExGlobalFunc.m */,
+				D79100CF2570F7F5008B8037 /* LVMethod.m */,
+				D79100D02570F7F5008B8037 /* LVSystem.h */,
+				D79100D12570F7F5008B8037 /* LVRotationGesture.m */,
+				D79100D22570F7F5008B8037 /* LVRefreshComponent.h */,
+				D79100D32570F7F5008B8037 /* LVBaseView.h */,
+				D79100D42570F7F5008B8037 /* LVAudioPlayer.m */,
+				D79100D52570F7F5008B8037 /* LVToast.h */,
+				D79100D62570F7F5008B8037 /* LVImage.h */,
+				D79100D72570F7F5008B8037 /* LVSwipeGesture.h */,
+				D79100D82570F7F5008B8037 /* LVNetworkStatus.h */,
+				D79100D92570F7F5008B8037 /* LVScrollView.m */,
+				D79100DA2570F7F5008B8037 /* LVDownloader.h */,
+				D79100DB2570F7F5008B8037 /* UIScrollView+LVRefresh.m */,
+				D79100DC2570F7F5008B8037 /* LVCollectionViewCell.m */,
+				D79100DD2570F7F5008B8037 /* LVAnimator.h */,
+				D79100DE2570F7F5008B8037 /* LVData.m */,
+				D79100DF2570F7F5008B8037 /* LVButton.h */,
+				D79100E02570F7F5008B8037 /* LVLabel.m */,
+				D79100E12570F7F5008B8037 /* LVDate.m */,
+				D79100E22570F7F5008B8037 /* LVTimer.h */,
+				D79100E32570F7F5008B8037 /* LVEmptyRefreshCollectionView.h */,
+				D79100E42570F7F5008B8037 /* LVNavigation.m */,
+				D79100E52570F7F5008B8037 /* LVFile.m */,
+				D79100E62570F7F5008B8037 /* LVCustomPanel.h */,
+				D79100E72570F7F5008B8037 /* LVPointerValueBox.h */,
+				D79100E82570F7F5008B8037 /* LVCollectionView.h */,
+				D79100E92570F7F5008B8037 /* LVFlowLayout.h */,
+				D79100EA2570F7F5008B8037 /* LVAnimate.h */,
+				D79100EB2570F7F5008B8037 /* UIScrollView+LuaView.h */,
+				D79100EC2570F7F5008B8037 /* LVNinePatchImage.h */,
+				D79100ED2570F7F5008B8037 /* LVStyledString.h */,
+				D79100EE2570F7F5008B8037 /* LVEvent.m */,
+				D79100EF2570F7F6008B8037 /* LVRefreshConst.h */,
+			);
+			path = lvsdk;
+			sourceTree = "<group>";
+		};
+		D79100F42570F7F6008B8037 /* lvdebug */ = {
+			isa = PBXGroup;
+			children = (
+				D79100F52570F7F6008B8037 /* LVDebuger.h */,
+				D79100F62570F7F6008B8037 /* LVDebugConnection.h */,
+				D79100F72570F7F6008B8037 /* debug.lua */,
+				D79100F82570F7F6008B8037 /* LVDebuger.m */,
+				D79100F92570F7F6008B8037 /* LVDebugConnection.m */,
+				D79100FA2570F7F6008B8037 /* LVDebugLua.m */,
+			);
+			path = lvdebug;
+			sourceTree = "<group>";
+		};
+		D79100FD2570F7F6008B8037 /* PKG */ = {
+			isa = PBXGroup;
+			children = (
+				D79100FE2570F7F6008B8037 /* LVPkgInfo.h */,
+				D79100FF2570F7F6008B8037 /* LVZipArchive.h */,
+				D79101002570F7F6008B8037 /* LVPkgManager.h */,
+				D79101012570F7F6008B8037 /* LVPkgInfo.m */,
+				D79101022570F7F6008B8037 /* LVZipArchive.m */,
+				D79101032570F7F6008B8037 /* LVPkgManager.m */,
+			);
+			path = PKG;
+			sourceTree = "<group>";
+		};
+		D79101672570FCD2008B8037 /* lua_animate */ = {
+			isa = PBXGroup;
+			children = (
+				D791016D2570FCE3008B8037 /* close.png */,
+				D79101682570FCE2008B8037 /* demoZ_1212.lua */,
+				D791016A2570FCE2008B8037 /* enter.png */,
+				D791016C2570FCE2008B8037 /* enter10.png */,
+				D791016F2570FCE3008B8037 /* enter11.png */,
+				D791016E2570FCE3008B8037 /* hongbao.png */,
+				D79101692570FCE2008B8037 /* jhs.png */,
+				D791016B2570FCE2008B8037 /* line.png */,
+			);
+			path = lua_animate;
+			sourceTree = "<group>";
+		};
+		D79101782570FCEA008B8037 /* luaviewEx */ = {
+			isa = PBXGroup;
+			children = (
+				D791018C2570FD13008B8037 /* ViewController.h */,
+				D791018B2570FD13008B8037 /* ViewController.m */,
+				D79101842570FD0C008B8037 /* JHSLuaViewController.h */,
+				D791017A2570FD0C008B8037 /* JHSLuaViewController.m */,
+				D791017E2570FD0C008B8037 /* JHSLVButton.h */,
+				D79101812570FD0C008B8037 /* JHSLVButton.m */,
+				D791017C2570FD0C008B8037 /* JHSLVCollectionView.h */,
+				D79101802570FD0C008B8037 /* JHSLVCollectionView.m */,
+				D79101792570FD0C008B8037 /* JHSLVCustomError.h */,
+				D791017D2570FD0C008B8037 /* JHSLVCustomError.m */,
+				D79101832570FD0C008B8037 /* JHSLVCustomLoading.h */,
+				D79101822570FD0C008B8037 /* JHSLVCustomLoading.m */,
+				D791017B2570FD0C008B8037 /* JHSLVImage.h */,
+				D791017F2570FD0C008B8037 /* JHSLVImage.m */,
+			);
+			path = luaviewEx;
+			sourceTree = "<group>";
+		};
+		D791FDB02570F6F7008B8037 = {
+			isa = PBXGroup;
+			children = (
+				D791FDBB2570F6F7008B8037 /* testOc */,
+				D791FDD72570F6F9008B8037 /* testOcTests */,
+				D791FDE22570F6F9008B8037 /* testOcUITests */,
+				D791FDBA2570F6F7008B8037 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D791FDBA2570F6F7008B8037 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D791FDB92570F6F7008B8037 /* testOc.app */,
+				D791FDD42570F6F9008B8037 /* testOcTests.xctest */,
+				D791FDDF2570F6F9008B8037 /* testOcUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D791FDBB2570F6F7008B8037 /* testOc */ = {
+			isa = PBXGroup;
+			children = (
+				D79101782570FCEA008B8037 /* luaviewEx */,
+				D79101672570FCD2008B8037 /* lua_animate */,
+				D79100522570F7F5008B8037 /* fuacking */,
+				D791FFF52570F7EE008B8037 /* lua */,
+				D791FDBC2570F6F7008B8037 /* AppDelegate.h */,
+				D791FDBD2570F6F7008B8037 /* AppDelegate.m */,
+				D791FDBF2570F6F7008B8037 /* SceneDelegate.h */,
+				D791FDC02570F6F7008B8037 /* SceneDelegate.m */,
+				D79101652570FB54008B8037 /* demoA_Hello.lua */,
+				D791FDC52570F6F7008B8037 /* Main.storyboard */,
+				D791FDC82570F6F8008B8037 /* Assets.xcassets */,
+				D791FDCA2570F6F8008B8037 /* LaunchScreen.storyboard */,
+				D791FDCD2570F6F8008B8037 /* Info.plist */,
+				D791FDCE2570F6F8008B8037 /* main.m */,
+				D7572B382579179D0079E356 /* PrintLog.h */,
+				D7572B392579179D0079E356 /* PrintLog.c */,
+			);
+			path = testOc;
+			sourceTree = "<group>";
+		};
+		D791FDD72570F6F9008B8037 /* testOcTests */ = {
+			isa = PBXGroup;
+			children = (
+				D791FDD82570F6F9008B8037 /* testOcTests.m */,
+				D791FDDA2570F6F9008B8037 /* Info.plist */,
+			);
+			path = testOcTests;
+			sourceTree = "<group>";
+		};
+		D791FDE22570F6F9008B8037 /* testOcUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D791FDE32570F6F9008B8037 /* testOcUITests.m */,
+				D791FDE52570F6F9008B8037 /* Info.plist */,
+			);
+			path = testOcUITests;
+			sourceTree = "<group>";
+		};
+		D791FFF52570F7EE008B8037 /* lua */ = {
+			isa = PBXGroup;
+			children = (
+				D791FFF62570F7EE008B8037 /* lauxlib.c */,
+				D791FFF72570F7EE008B8037 /* lmem.h */,
+				D791FFF82570F7EE008B8037 /* llimits.h */,
+				D791FFF92570F7EE008B8037 /* luaconf.h */,
+				D791FFFA2570F7EE008B8037 /* lzio.h */,
+				D791FFFB2570F7EE008B8037 /* lgc.h */,
+				D791FFFC2570F7EE008B8037 /* liolib.c */,
+				D791FFFD2570F7EE008B8037 /* lopcodes.c */,
+				D791FFFE2570F7EE008B8037 /* lstate.c */,
+				D791FFFF2570F7EE008B8037 /* lobject.c */,
+				D79100002570F7EE008B8037 /* lualib.h */,
+				D79100012570F7EE008B8037 /* print.c */,
+				D79100022570F7EE008B8037 /* lmathlib.c */,
+				D79100032570F7EE008B8037 /* loadlib.c */,
+				D79100042570F7EE008B8037 /* lvm.c */,
+				D79100052570F7EE008B8037 /* lfunc.c */,
+				D79100062570F7EE008B8037 /* lstrlib.c */,
+				D79100072570F7EE008B8037 /* lua.c */,
+				D79100082570F7EE008B8037 /* ldebug.h */,
+				D79100092570F7EE008B8037 /* linit.c */,
+				D791000A2570F7EE008B8037 /* lcode.h */,
+				D791000B2570F7EE008B8037 /* lapi.h */,
+				D791000C2570F7EE008B8037 /* lstring.c */,
+				D791000D2570F7EE008B8037 /* ldo.h */,
+				D791000E2570F7EE008B8037 /* lundump.c */,
+				D791000F2570F7EE008B8037 /* llex.h */,
+				D79100102570F7EE008B8037 /* luac.c */,
+				D79100112570F7EE008B8037 /* ltm.h */,
+				D79100122570F7EE008B8037 /* ltable.c */,
+				D79100132570F7EE008B8037 /* lparser.h */,
+				D79100142570F7EE008B8037 /* ldump.c */,
+				D79100152570F7EE008B8037 /* lobject.h */,
+				D79100162570F7EE008B8037 /* lstate.h */,
+				D79100172570F7EE008B8037 /* lopcodes.h */,
+				D79100182570F7EE008B8037 /* loslib.c */,
+				D79100192570F7EE008B8037 /* lgc.c */,
+				D791001A2570F7EE008B8037 /* lzio.c */,
+				D791001B2570F7EE008B8037 /* ldblib.c */,
+				D791001C2570F7EE008B8037 /* lmem.c */,
+				D791001D2570F7EE008B8037 /* lauxlib.h */,
+				D791001E2570F7EE008B8037 /* lvm.h */,
+				D791001F2570F7EE008B8037 /* lstring.h */,
+				D79100202570F7EE008B8037 /* lcode.c */,
+				D79100212570F7EE008B8037 /* ltablib.c */,
+				D79100222570F7EE008B8037 /* lapi.c */,
+				D79100232570F7EE008B8037 /* lbaselib.c */,
+				D79100242570F7EE008B8037 /* lua.h */,
+				D79100252570F7EE008B8037 /* ldebug.c */,
+				D79100262570F7EE008B8037 /* lfunc.h */,
+				D79100272570F7EE008B8037 /* lparser.c */,
+				D79100282570F7EE008B8037 /* TAGS_NOTES.md */,
+				D79100292570F7EE008B8037 /* llex.c */,
+				D791002A2570F7EE008B8037 /* ltable.h */,
+				D791002B2570F7EE008B8037 /* ltm.c */,
+				D791002C2570F7EE008B8037 /* ldo.c */,
+				D791002D2570F7EE008B8037 /* lundump.h */,
+			);
+			path = lua;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D791FDB82570F6F7008B8037 /* testOc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D791FDE82570F6F9008B8037 /* Build configuration list for PBXNativeTarget "testOc" */;
+			buildPhases = (
+				D791FDB52570F6F7008B8037 /* Sources */,
+				D791FDB62570F6F7008B8037 /* Frameworks */,
+				D791FDB72570F6F7008B8037 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testOc;
+			productName = testOc;
+			productReference = D791FDB92570F6F7008B8037 /* testOc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D791FDD32570F6F9008B8037 /* testOcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D791FDEB2570F6F9008B8037 /* Build configuration list for PBXNativeTarget "testOcTests" */;
+			buildPhases = (
+				D791FDD02570F6F9008B8037 /* Sources */,
+				D791FDD12570F6F9008B8037 /* Frameworks */,
+				D791FDD22570F6F9008B8037 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D791FDD62570F6F9008B8037 /* PBXTargetDependency */,
+			);
+			name = testOcTests;
+			productName = testOcTests;
+			productReference = D791FDD42570F6F9008B8037 /* testOcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D791FDDE2570F6F9008B8037 /* testOcUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D791FDEE2570F6F9008B8037 /* Build configuration list for PBXNativeTarget "testOcUITests" */;
+			buildPhases = (
+				D791FDDB2570F6F9008B8037 /* Sources */,
+				D791FDDC2570F6F9008B8037 /* Frameworks */,
+				D791FDDD2570F6F9008B8037 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D791FDE12570F6F9008B8037 /* PBXTargetDependency */,
+			);
+			name = testOcUITests;
+			productName = testOcUITests;
+			productReference = D791FDDF2570F6F9008B8037 /* testOcUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D791FDB12570F6F7008B8037 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					D791FDB82570F6F7008B8037 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					D791FDD32570F6F9008B8037 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = D791FDB82570F6F7008B8037;
+					};
+					D791FDDE2570F6F9008B8037 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = D791FDB82570F6F7008B8037;
+					};
+				};
+			};
+			buildConfigurationList = D791FDB42570F6F7008B8037 /* Build configuration list for PBXProject "testOc" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D791FDB02570F6F7008B8037;
+			productRefGroup = D791FDBA2570F6F7008B8037 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D791FDB82570F6F7008B8037 /* testOc */,
+				D791FDD32570F6F9008B8037 /* testOcTests */,
+				D791FDDE2570F6F9008B8037 /* testOcUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D791FDB72570F6F7008B8037 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D79101702570FCE3008B8037 /* demoZ_1212.lua in Resources */,
+				D79101662570FB54008B8037 /* demoA_Hello.lua in Resources */,
+				D791FDCC2570F6F8008B8037 /* LaunchScreen.storyboard in Resources */,
+				D791FDC92570F6F8008B8037 /* Assets.xcassets in Resources */,
+				D79101752570FCE3008B8037 /* close.png in Resources */,
+				D79101062570F7F6008B8037 /* LuaViewSDK-Info.plist in Resources */,
+				D79101722570FCE3008B8037 /* enter.png in Resources */,
+				D791FDC72570F6F7008B8037 /* Main.storyboard in Resources */,
+				D79101532570F7F6008B8037 /* debug.lua in Resources */,
+				D791004B2570F7EE008B8037 /* TAGS_NOTES.md in Resources */,
+				D79101762570FCE3008B8037 /* hongbao.png in Resources */,
+				D791015B2570F7F6008B8037 /* Info.plist in Resources */,
+				D79101742570FCE3008B8037 /* enter10.png in Resources */,
+				D79101712570FCE3008B8037 /* jhs.png in Resources */,
+				D79101772570FCE3008B8037 /* enter11.png in Resources */,
+				D79101732570FCE3008B8037 /* line.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D791FDD22570F6F9008B8037 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D791FDDD2570F6F9008B8037 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D791FDB52570F6F7008B8037 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D791018D2570FD13008B8037 /* ViewController.m in Sources */,
+				D791014E2570F7F6008B8037 /* LVEvent.m in Sources */,
+				D791003D2570F7EE008B8037 /* luac.c in Sources */,
+				D791010F2570F7F6008B8037 /* LVTransform3D.m in Sources */,
+				D79100442570F7EE008B8037 /* lmem.c in Sources */,
+				D79101092570F7F6008B8037 /* JUFLXLinearLayoutView.m in Sources */,
+				D79101162570F7F6008B8037 /* LVScrollViewDelegate.m in Sources */,
+				D791002F2570F7EE008B8037 /* liolib.c in Sources */,
+				D79100352570F7EE008B8037 /* loadlib.c in Sources */,
+				D79101422570F7F6008B8037 /* LVExGlobalFunc.m in Sources */,
+				D791012B2570F7F6008B8037 /* LVSwipeGesture.m in Sources */,
+				D79101102570F7F6008B8037 /* LVPinchGesture.m in Sources */,
+				D79101452570F7F6008B8037 /* LVAudioPlayer.m in Sources */,
+				D79100402570F7EE008B8037 /* loslib.c in Sources */,
+				D79100372570F7EE008B8037 /* lfunc.c in Sources */,
+				D79101362570F7F6008B8037 /* LVGesture.m in Sources */,
+				D79101872570FD0C008B8037 /* JHSLVImage.m in Sources */,
+				D791013C2570F7F6008B8037 /* LVPagerView.m in Sources */,
+				D79101342570F7F6008B8037 /* LVCustomView.m in Sources */,
+				D79100462570F7EE008B8037 /* ltablib.c in Sources */,
+				D791015A2570F7F6008B8037 /* LVPkgManager.m in Sources */,
+				D791003A2570F7EE008B8037 /* linit.c in Sources */,
+				D79101582570F7F6008B8037 /* LVPkgInfo.m in Sources */,
+				D791013E2570F7F6008B8037 /* LVClassInfo.m in Sources */,
+				D79100452570F7EE008B8037 /* lcode.c in Sources */,
+				D79101112570F7F6008B8037 /* NSObject+LuaView.m in Sources */,
+				D79101382570F7F6008B8037 /* LVTypeConvert.m in Sources */,
+				D791011C2570F7F6008B8037 /* LVSystem.m in Sources */,
+				D79101132570F7F6008B8037 /* LVPagerIndicator.m in Sources */,
+				D79101232570F7F6008B8037 /* LVAlert.m in Sources */,
+				D791011A2570F7F6008B8037 /* LVBaseView.m in Sources */,
+				D791FDBE2570F6F7008B8037 /* AppDelegate.m in Sources */,
+				D79101852570FD0C008B8037 /* JHSLuaViewController.m in Sources */,
+				D79101482570F7F6008B8037 /* LVCollectionViewCell.m in Sources */,
+				D791013B2570F7F6008B8037 /* LVPanGesture.m in Sources */,
+				D791014A2570F7F6008B8037 /* LVLabel.m in Sources */,
+				D79101412570F7F6008B8037 /* LVCamera.m in Sources */,
+				D791011B2570F7F6008B8037 /* LVRefreshComponent.m in Sources */,
+				D791003C2570F7EE008B8037 /* lundump.c in Sources */,
+				D79101282570F7F6008B8037 /* LVAnimator.m in Sources */,
+				D791012D2570F7F6008B8037 /* LVStyledString.m in Sources */,
+				D79101212570F7F6008B8037 /* LVTapGesture.m in Sources */,
+				D79100492570F7EE008B8037 /* ldebug.c in Sources */,
+				D79101152570F7F6008B8037 /* UIView+LuaView.m in Sources */,
+				D79100342570F7EE008B8037 /* lmathlib.c in Sources */,
+				D79101202570F7F6008B8037 /* LVBitmap.m in Sources */,
+				D791013F2570F7F6008B8037 /* LVHttp.m in Sources */,
+				D791003E2570F7EE008B8037 /* ltable.c in Sources */,
+				D791003F2570F7EE008B8037 /* ldump.c in Sources */,
+				D79101432570F7F6008B8037 /* LVMethod.m in Sources */,
+				D79101522570F7F6008B8037 /* LuaViewCore.m in Sources */,
+				D79101892570FD0C008B8037 /* JHSLVButton.m in Sources */,
+				D79101332570F7F6008B8037 /* LVPointerValueBox.m in Sources */,
+				D791004A2570F7EE008B8037 /* lparser.c in Sources */,
+				D79101292570F7F6008B8037 /* LVDownloader.m in Sources */,
+				D791013A2570F7F6008B8037 /* LVRefreshHeader.m in Sources */,
+				D791010C2570F7F6008B8037 /* LVRSA.m in Sources */,
+				D79101492570F7F6008B8037 /* LVData.m in Sources */,
+				D791012F2570F7F6008B8037 /* UIScrollView+LuaView.m in Sources */,
+				D79100412570F7EE008B8037 /* lgc.c in Sources */,
+				D791011F2570F7F6008B8037 /* LVLongPressGesture.m in Sources */,
+				D79101322570F7F6008B8037 /* LVCollectionView.m in Sources */,
+				D791FDCF2570F6F8008B8037 /* main.m in Sources */,
+				D79101182570F7F6008B8037 /* LVToast.m in Sources */,
+				D79101122570F7F6008B8037 /* LVNativeObjBox.m in Sources */,
+				D79101252570F7F6008B8037 /* LVEmptyRefreshCollectionView.m in Sources */,
+				D79101222570F7F6008B8037 /* LVUtil.m in Sources */,
+				D79100382570F7EE008B8037 /* lstrlib.c in Sources */,
+				D79101262570F7F6008B8037 /* LVTimer.m in Sources */,
+				D79101072570F7F6008B8037 /* Layout.c in Sources */,
+				D791010B2570F7F6008B8037 /* UIView+JUFLXNode.m in Sources */,
+				D79101542570F7F6008B8037 /* LVDebuger.m in Sources */,
+				D79101302570F7F6008B8037 /* LVAnimate.m in Sources */,
+				D79101562570F7F6008B8037 /* LVDebugLua.m in Sources */,
+				D791014B2570F7F6008B8037 /* LVDate.m in Sources */,
+				D79100392570F7EE008B8037 /* lua.c in Sources */,
+				D79100322570F7EE008B8037 /* lobject.c in Sources */,
+				D791012E2570F7F6008B8037 /* LVNinePatchImage.m in Sources */,
+				D79101862570FD0C008B8037 /* JHSLVCustomError.m in Sources */,
+				D791002E2570F7EE008B8037 /* lauxlib.c in Sources */,
+				D79101192570F7F6008B8037 /* LVImage.m in Sources */,
+				D79101352570F7F6008B8037 /* LVDB.m in Sources */,
+				D79100362570F7EE008B8037 /* lvm.c in Sources */,
+				D79101462570F7F6008B8037 /* LVScrollView.m in Sources */,
+				D791010E2570F7F6008B8037 /* LVLoadingIndicator.m in Sources */,
+				D79101592570F7F6008B8037 /* LVZipArchive.m in Sources */,
+				D79101882570FD0C008B8037 /* JHSLVCollectionView.m in Sources */,
+				D791010A2570F7F6008B8037 /* JUFLXCSSParser.m in Sources */,
+				D79101142570F7F6008B8037 /* LVTextField.m in Sources */,
+				D79101572570F7F6008B8037 /* LView.m in Sources */,
+				D791003B2570F7EE008B8037 /* lstring.c in Sources */,
+				D79100422570F7EE008B8037 /* lzio.c in Sources */,
+				D791014D2570F7F6008B8037 /* LVFile.m in Sources */,
+				D791014C2570F7F6008B8037 /* LVNavigation.m in Sources */,
+				D79100482570F7EE008B8037 /* lbaselib.c in Sources */,
+				D79101472570F7F6008B8037 /* UIScrollView+LVRefresh.m in Sources */,
+				D79101402570F7F6008B8037 /* LVCollectionViewDelegate.m in Sources */,
+				D79100302570F7EE008B8037 /* lopcodes.c in Sources */,
+				D791011E2570F7F6008B8037 /* LVCanvas.m in Sources */,
+				D79101552570F7F6008B8037 /* LVDebugConnection.m in Sources */,
+				D79101392570F7F6008B8037 /* LVLuaObjBox.m in Sources */,
+				D791004C2570F7EE008B8037 /* llex.c in Sources */,
+				D791013D2570F7F6008B8037 /* LVStruct.m in Sources */,
+				D791014F2570F7F6008B8037 /* LuaView.m in Sources */,
+				D791004D2570F7EE008B8037 /* ltm.c in Sources */,
+				D79101242570F7F6008B8037 /* LVCustomPanel.m in Sources */,
+				D7572B3A2579179D0079E356 /* PrintLog.c in Sources */,
+				D791012A2570F7F6008B8037 /* LVNetworkStatus.m in Sources */,
+				D79100472570F7EE008B8037 /* lapi.c in Sources */,
+				D79100312570F7EE008B8037 /* lstate.c in Sources */,
+				D791010D2570F7F6008B8037 /* LVBlock.m in Sources */,
+				D791FDC12570F6F7008B8037 /* SceneDelegate.m in Sources */,
+				D79101442570F7F6008B8037 /* LVRotationGesture.m in Sources */,
+				D791011D2570F7F6008B8037 /* LVHeads.m in Sources */,
+				D79101512570F7F6008B8037 /* LViewController.m in Sources */,
+				D791012C2570F7F6008B8037 /* LVRefreshConst.m in Sources */,
+				D791004E2570F7EE008B8037 /* ldo.c in Sources */,
+				D79101372570F7F6008B8037 /* LVHttpResponse.m in Sources */,
+				D791018A2570FD0C008B8037 /* JHSLVCustomLoading.m in Sources */,
+				D79101312570F7F6008B8037 /* LVFlowLayout.m in Sources */,
+				D79100432570F7EE008B8037 /* ldblib.c in Sources */,
+				D79101272570F7F6008B8037 /* LVButton.m in Sources */,
+				D79100332570F7EE008B8037 /* print.c in Sources */,
+				D79101502570F7F6008B8037 /* LVBundle.m in Sources */,
+				D79101082570F7F6008B8037 /* JUFLXNode.m in Sources */,
+				D79101172570F7F6008B8037 /* LVPagerViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D791FDD02570F6F9008B8037 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D791FDD92570F6F9008B8037 /* testOcTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D791FDDB2570F6F9008B8037 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D791FDE42570F6F9008B8037 /* testOcUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D791FDD62570F6F9008B8037 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D791FDB82570F6F7008B8037 /* testOc */;
+			targetProxy = D791FDD52570F6F9008B8037 /* PBXContainerItemProxy */;
+		};
+		D791FDE12570F6F9008B8037 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D791FDB82570F6F7008B8037 /* testOc */;
+			targetProxy = D791FDE02570F6F9008B8037 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D791FDC52570F6F7008B8037 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D791FDC62570F6F7008B8037 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D791FDCA2570F6F8008B8037 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D791FDCB2570F6F8008B8037 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D791FDE62570F6F9008B8037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D791FDE72570F6F9008B8037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D791FDE92570F6F9008B8037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = testOc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.testOc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D791FDEA2570F6F9008B8037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = testOc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.testOc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D791FDEC2570F6F9008B8037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = testOcTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.testOcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/testOc.app/testOc";
+			};
+			name = Debug;
+		};
+		D791FDED2570F6F9008B8037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = testOcTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.testOcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/testOc.app/testOc";
+			};
+			name = Release;
+		};
+		D791FDEF2570F6F9008B8037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = testOcUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.testOcUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = testOc;
+			};
+			name = Debug;
+		};
+		D791FDF02570F6F9008B8037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = testOcUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.testOcUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = testOc;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D791FDB42570F6F7008B8037 /* Build configuration list for PBXProject "testOc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D791FDE62570F6F9008B8037 /* Debug */,
+				D791FDE72570F6F9008B8037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D791FDE82570F6F9008B8037 /* Build configuration list for PBXNativeTarget "testOc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D791FDE92570F6F9008B8037 /* Debug */,
+				D791FDEA2570F6F9008B8037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D791FDEB2570F6F9008B8037 /* Build configuration list for PBXNativeTarget "testOcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D791FDEC2570F6F9008B8037 /* Debug */,
+				D791FDED2570F6F9008B8037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D791FDEE2570F6F9008B8037 /* Build configuration list for PBXNativeTarget "testOcUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D791FDEF2570F6F9008B8037 /* Debug */,
+				D791FDF02570F6F9008B8037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D791FDB12570F6F7008B8037 /* Project object */;
+}

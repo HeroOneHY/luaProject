@@ -10,4 +10,5 @@
 
 @interface User : NSObject
 @property(nonatomic, copy)NSString *name;
+-(void)test;
 @end
